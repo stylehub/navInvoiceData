@@ -1,0 +1,42 @@
+Dream\NavInvoiceData\DieselOilPurchaseType:
+    properties:
+        purchaseLocation:
+            expose: true
+            access_type: public_method
+            serialized_name: purchaseLocation
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPurchaseLocation
+                setter: setPurchaseLocation
+            type: Dream\NavInvoiceData\SimpleAddressType
+        purchaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: purchaseDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPurchaseDate
+                setter: setPurchaseDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        vehicleRegistrationNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: vehicleRegistrationNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVehicleRegistrationNumber
+                setter: setVehicleRegistrationNumber
+            type: string
+        dieselOilQuantity:
+            expose: true
+            access_type: public_method
+            serialized_name: dieselOilQuantity
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDieselOilQuantity
+                setter: setDieselOilQuantity
+            type: float

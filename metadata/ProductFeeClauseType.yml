@@ -1,0 +1,22 @@
+Dream\NavInvoiceData\ProductFeeClauseType:
+    properties:
+        productFeeTakeoverData:
+            expose: true
+            access_type: public_method
+            serialized_name: productFeeTakeoverData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getProductFeeTakeoverData
+                setter: setProductFeeTakeoverData
+            type: Dream\NavInvoiceData\ProductFeeTakeoverDataType
+        customerDeclaration:
+            expose: true
+            access_type: public_method
+            serialized_name: customerDeclaration
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCustomerDeclaration
+                setter: setCustomerDeclaration
+            type: Dream\NavInvoiceData\CustomerDeclarationType

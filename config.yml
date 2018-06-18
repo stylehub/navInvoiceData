@@ -1,0 +1,11 @@
+xsd2php:
+  namespaces:
+    'http://schemas.nav.gov.hu/OSA/1.0/data': 'Dream\NavInvoiceData'
+  destinations_php:
+    'Dream\NavInvoiceData': src
+#    'TestNs\MyApp': soap\src  #  on Windows
+  destinations_jms:
+    'Dream\NavInvoiceData': metadata
+#    'TestNs\MyApp': soap\metadata  #  on Windows
+  naming_strategy: short
+  path_generator: psr4

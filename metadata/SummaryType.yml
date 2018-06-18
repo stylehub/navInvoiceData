@@ -1,0 +1,36 @@
+Dream\NavInvoiceData\SummaryType:
+    properties:
+        summaryNormal:
+            expose: true
+            access_type: public_method
+            serialized_name: summaryNormal
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSummaryNormal
+                setter: setSummaryNormal
+            type: Dream\NavInvoiceData\SummaryNormalType
+        summarySimplified:
+            expose: true
+            access_type: public_method
+            serialized_name: summarySimplified
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSummarySimplified
+                setter: setSummarySimplified
+            xml_list:
+                inline: true
+                entry_name: summarySimplified
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            type: array<Dream\NavInvoiceData\SummarySimplifiedType>
+        invoiceGrossAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceGrossAmount
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceGrossAmount
+                setter: setInvoiceGrossAmount
+            type: float

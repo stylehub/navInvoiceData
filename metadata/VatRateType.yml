@@ -1,0 +1,62 @@
+Dream\NavInvoiceData\VatRateType:
+    properties:
+        vatPercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: vatPercentage
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVatPercentage
+                setter: setVatPercentage
+            type: float
+        vatExemption:
+            expose: true
+            access_type: public_method
+            serialized_name: vatExemption
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVatExemption
+                setter: setVatExemption
+            type: string
+        vatOutOfScope:
+            expose: true
+            access_type: public_method
+            serialized_name: vatOutOfScope
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVatOutOfScope
+                setter: setVatOutOfScope
+            type: boolean
+        vatDomesticReverseCharge:
+            expose: true
+            access_type: public_method
+            serialized_name: vatDomesticReverseCharge
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVatDomesticReverseCharge
+                setter: setVatDomesticReverseCharge
+            type: boolean
+        marginSchemeVat:
+            expose: true
+            access_type: public_method
+            serialized_name: marginSchemeVat
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getMarginSchemeVat
+                setter: setMarginSchemeVat
+            type: boolean
+        marginSchemeNoVat:
+            expose: true
+            access_type: public_method
+            serialized_name: marginSchemeNoVat
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getMarginSchemeNoVat
+                setter: setMarginSchemeNoVat
+            type: boolean

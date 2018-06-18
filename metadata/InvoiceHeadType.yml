@@ -1,0 +1,42 @@
+Dream\NavInvoiceData\InvoiceHeadType:
+    properties:
+        supplierInfo:
+            expose: true
+            access_type: public_method
+            serialized_name: supplierInfo
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSupplierInfo
+                setter: setSupplierInfo
+            type: Dream\NavInvoiceData\SupplierInfoType
+        customerInfo:
+            expose: true
+            access_type: public_method
+            serialized_name: customerInfo
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCustomerInfo
+                setter: setCustomerInfo
+            type: Dream\NavInvoiceData\CustomerInfoType
+        fiscalRepresentativeInfo:
+            expose: true
+            access_type: public_method
+            serialized_name: fiscalRepresentativeInfo
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFiscalRepresentativeInfo
+                setter: setFiscalRepresentativeInfo
+            type: Dream\NavInvoiceData\FiscalRepresentativeType
+        invoiceData:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceData
+                setter: setInvoiceData
+            type: Dream\NavInvoiceData\InvoiceDataType

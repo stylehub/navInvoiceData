@@ -1,0 +1,72 @@
+Dream\NavInvoiceData\NewTransportMeanType:
+    properties:
+        brand:
+            expose: true
+            access_type: public_method
+            serialized_name: brand
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getBrand
+                setter: setBrand
+            type: string
+        serialNum:
+            expose: true
+            access_type: public_method
+            serialized_name: serialNum
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSerialNum
+                setter: setSerialNum
+            type: string
+        engineNum:
+            expose: true
+            access_type: public_method
+            serialized_name: engineNum
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getEngineNum
+                setter: setEngineNum
+            type: string
+        firstEntryIntoService:
+            expose: true
+            access_type: public_method
+            serialized_name: firstEntryIntoService
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFirstEntryIntoService
+                setter: setFirstEntryIntoService
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        vehicle:
+            expose: true
+            access_type: public_method
+            serialized_name: vehicle
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVehicle
+                setter: setVehicle
+            type: Dream\NavInvoiceData\VehicleType
+        vessel:
+            expose: true
+            access_type: public_method
+            serialized_name: vessel
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getVessel
+                setter: setVessel
+            type: Dream\NavInvoiceData\VesselType
+        aircraft:
+            expose: true
+            access_type: public_method
+            serialized_name: aircraft
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getAircraft
+                setter: setAircraft
+            type: Dream\NavInvoiceData\AircraftType

@@ -1,0 +1,52 @@
+Dream\NavInvoiceData\InvoiceReferenceType:
+    properties:
+        originalInvoiceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: originalInvoiceNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getOriginalInvoiceNumber
+                setter: setOriginalInvoiceNumber
+            type: string
+        modificationIssueDate:
+            expose: true
+            access_type: public_method
+            serialized_name: modificationIssueDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getModificationIssueDate
+                setter: setModificationIssueDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        modificationTimestamp:
+            expose: true
+            access_type: public_method
+            serialized_name: modificationTimestamp
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getModificationTimestamp
+                setter: setModificationTimestamp
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        lastModificationReference:
+            expose: true
+            access_type: public_method
+            serialized_name: lastModificationReference
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLastModificationReference
+                setter: setLastModificationReference
+            type: string
+        modifyWithoutMaster:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyWithoutMaster
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getModifyWithoutMaster
+                setter: setModifyWithoutMaster
+            type: boolean

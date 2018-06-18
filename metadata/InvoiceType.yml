@@ -1,0 +1,22 @@
+Dream\NavInvoiceData\InvoiceType:
+    properties:
+        invoiceExchange:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceExchange
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceExchange
+                setter: setInvoiceExchange
+            type: Dream\NavInvoiceData\InvoiceExchangeType
+        invoiceAnnulment:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceAnnulment
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceAnnulment
+                setter: setInvoiceAnnulment
+            type: Dream\NavInvoiceData\InvoiceAnnulmentType

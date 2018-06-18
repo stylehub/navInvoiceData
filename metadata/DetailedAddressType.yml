@@ -1,0 +1,122 @@
+Dream\NavInvoiceData\DetailedAddressType:
+    properties:
+        countryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: countryCode
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCountryCode
+                setter: setCountryCode
+            type: string
+        region:
+            expose: true
+            access_type: public_method
+            serialized_name: region
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getRegion
+                setter: setRegion
+            type: string
+        postalCode:
+            expose: true
+            access_type: public_method
+            serialized_name: postalCode
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPostalCode
+                setter: setPostalCode
+            type: string
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: city
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCity
+                setter: setCity
+            type: string
+        streetName:
+            expose: true
+            access_type: public_method
+            serialized_name: streetName
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getStreetName
+                setter: setStreetName
+            type: string
+        publicPlaceCategory:
+            expose: true
+            access_type: public_method
+            serialized_name: publicPlaceCategory
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPublicPlaceCategory
+                setter: setPublicPlaceCategory
+            type: string
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: number
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            type: string
+        building:
+            expose: true
+            access_type: public_method
+            serialized_name: building
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getBuilding
+                setter: setBuilding
+            type: string
+        staircase:
+            expose: true
+            access_type: public_method
+            serialized_name: staircase
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getStaircase
+                setter: setStaircase
+            type: string
+        floor:
+            expose: true
+            access_type: public_method
+            serialized_name: floor
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFloor
+                setter: setFloor
+            type: string
+        door:
+            expose: true
+            access_type: public_method
+            serialized_name: door
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDoor
+                setter: setDoor
+            type: string
+        lotNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: lotNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLotNumber
+                setter: setLotNumber
+            type: string

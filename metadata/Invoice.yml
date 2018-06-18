@@ -1,0 +1,4 @@
+Dream\NavInvoiceData\Invoice:
+    xml_root_name: Invoice
+    xml_root_namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+    properties: {  }

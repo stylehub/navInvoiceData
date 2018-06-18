@@ -1,0 +1,275 @@
+Dream\NavInvoiceData\LineType:
+    properties:
+        lineNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: lineNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineNumber
+                setter: setLineNumber
+            type: integer
+        lineModificationReference:
+            expose: true
+            access_type: public_method
+            serialized_name: lineModificationReference
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineModificationReference
+                setter: setLineModificationReference
+            type: Dream\NavInvoiceData\LineModificationReferenceType
+        referencesToOtherLines:
+            expose: true
+            access_type: public_method
+            serialized_name: referencesToOtherLines
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getReferencesToOtherLines
+                setter: setReferencesToOtherLines
+            type: array<integer>
+            xml_list:
+                inline: false
+                entry_name: referenceToOtherLine
+                skip_when_empty: true
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+        advanceIndicator:
+            expose: true
+            access_type: public_method
+            serialized_name: advanceIndicator
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getAdvanceIndicator
+                setter: setAdvanceIndicator
+            type: boolean
+        productCodes:
+            expose: true
+            access_type: public_method
+            serialized_name: productCodes
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getProductCodes
+                setter: setProductCodes
+            type: array<Dream\NavInvoiceData\ProductCodeType>
+            xml_list:
+                inline: false
+                entry_name: productCode
+                skip_when_empty: true
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+        lineDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: lineDescription
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineDescription
+                setter: setLineDescription
+            type: string
+        quantity:
+            expose: true
+            access_type: public_method
+            serialized_name: quantity
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getQuantity
+                setter: setQuantity
+            type: float
+        unitOfMeasure:
+            expose: true
+            access_type: public_method
+            serialized_name: unitOfMeasure
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getUnitOfMeasure
+                setter: setUnitOfMeasure
+            type: string
+        unitPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: unitPrice
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getUnitPrice
+                setter: setUnitPrice
+            type: float
+        lineDiscountData:
+            expose: true
+            access_type: public_method
+            serialized_name: lineDiscountData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineDiscountData
+                setter: setLineDiscountData
+            type: Dream\NavInvoiceData\DiscountDataType
+        lineAmountsNormal:
+            expose: true
+            access_type: public_method
+            serialized_name: lineAmountsNormal
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineAmountsNormal
+                setter: setLineAmountsNormal
+            type: Dream\NavInvoiceData\LineAmountsNormalType
+        lineAmountsSimplified:
+            expose: true
+            access_type: public_method
+            serialized_name: lineAmountsSimplified
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineAmountsSimplified
+                setter: setLineAmountsSimplified
+            type: Dream\NavInvoiceData\LineAmountsSimplifiedType
+        intermediatedService:
+            expose: true
+            access_type: public_method
+            serialized_name: intermediatedService
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getIntermediatedService
+                setter: setIntermediatedService
+            type: boolean
+        aggregateInvoiceLineData:
+            expose: true
+            access_type: public_method
+            serialized_name: aggregateInvoiceLineData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getAggregateInvoiceLineData
+                setter: setAggregateInvoiceLineData
+            type: Dream\NavInvoiceData\AggregateInvoiceLineDataType
+        newTransportMean:
+            expose: true
+            access_type: public_method
+            serialized_name: newTransportMean
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getNewTransportMean
+                setter: setNewTransportMean
+            type: Dream\NavInvoiceData\NewTransportMeanType
+        depositIndicator:
+            expose: true
+            access_type: public_method
+            serialized_name: depositIndicator
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDepositIndicator
+                setter: setDepositIndicator
+            type: boolean
+        marginSchemeIndicator:
+            expose: true
+            access_type: public_method
+            serialized_name: marginSchemeIndicator
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getMarginSchemeIndicator
+                setter: setMarginSchemeIndicator
+            type: string
+        ekaerIds:
+            expose: true
+            access_type: public_method
+            serialized_name: ekaerIds
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getEkaerIds
+                setter: setEkaerIds
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: ekaerId
+                skip_when_empty: true
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+        obligatedForProductFee:
+            expose: true
+            access_type: public_method
+            serialized_name: obligatedForProductFee
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getObligatedForProductFee
+                setter: setObligatedForProductFee
+            type: boolean
+        gPCExcise:
+            expose: true
+            access_type: public_method
+            serialized_name: GPCExcise
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getGPCExcise
+                setter: setGPCExcise
+            type: float
+        dieselOilPurchase:
+            expose: true
+            access_type: public_method
+            serialized_name: dieselOilPurchase
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDieselOilPurchase
+                setter: setDieselOilPurchase
+            type: Dream\NavInvoiceData\DieselOilPurchaseType
+        netaDeclaration:
+            expose: true
+            access_type: public_method
+            serialized_name: netaDeclaration
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getNetaDeclaration
+                setter: setNetaDeclaration
+            type: boolean
+        productFeeClause:
+            expose: true
+            access_type: public_method
+            serialized_name: productFeeClause
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getProductFeeClause
+                setter: setProductFeeClause
+            type: Dream\NavInvoiceData\ProductFeeClauseType
+        lineProductFeeContent:
+            expose: true
+            access_type: public_method
+            serialized_name: lineProductFeeContent
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineProductFeeContent
+                setter: setLineProductFeeContent
+            xml_list:
+                inline: true
+                entry_name: lineProductFeeContent
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            type: array<Dream\NavInvoiceData\ProductFeeDataType>
+        additionalLineData:
+            expose: true
+            access_type: public_method
+            serialized_name: additionalLineData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getAdditionalLineData
+                setter: setAdditionalLineData
+            xml_list:
+                inline: true
+                entry_name: additionalLineData
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            type: array<Dream\NavInvoiceData\AdditionalDataType>

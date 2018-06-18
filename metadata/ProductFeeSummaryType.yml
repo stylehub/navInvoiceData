@@ -1,0 +1,46 @@
+Dream\NavInvoiceData\ProductFeeSummaryType:
+    properties:
+        productFeeOperation:
+            expose: true
+            access_type: public_method
+            serialized_name: productFeeOperation
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getProductFeeOperation
+                setter: setProductFeeOperation
+            type: string
+        productFeeData:
+            expose: true
+            access_type: public_method
+            serialized_name: productFeeData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getProductFeeData
+                setter: setProductFeeData
+            xml_list:
+                inline: true
+                entry_name: productFeeData
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            type: array<Dream\NavInvoiceData\ProductFeeDataType>
+        productChargeSum:
+            expose: true
+            access_type: public_method
+            serialized_name: productChargeSum
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getProductChargeSum
+                setter: setProductChargeSum
+            type: float
+        paymentEvidenceDocumentData:
+            expose: true
+            access_type: public_method
+            serialized_name: paymentEvidenceDocumentData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPaymentEvidenceDocumentData
+                setter: setPaymentEvidenceDocumentData
+            type: Dream\NavInvoiceData\PaymentEvidenceDocumentDataType

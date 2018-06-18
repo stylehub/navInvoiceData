@@ -1,0 +1,42 @@
+Dream\NavInvoiceData\FiscalRepresentativeType:
+    properties:
+        fiscalRepresentativeTaxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: fiscalRepresentativeTaxNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFiscalRepresentativeTaxNumber
+                setter: setFiscalRepresentativeTaxNumber
+            type: Dream\NavInvoiceData\TaxNumberType
+        fiscalRepresentativeName:
+            expose: true
+            access_type: public_method
+            serialized_name: fiscalRepresentativeName
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFiscalRepresentativeName
+                setter: setFiscalRepresentativeName
+            type: string
+        fiscalRepresentativeAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: fiscalRepresentativeAddress
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFiscalRepresentativeAddress
+                setter: setFiscalRepresentativeAddress
+            type: Dream\NavInvoiceData\AddressType
+        fiscalRepresentativeBankAccountNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: fiscalRepresentativeBankAccountNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getFiscalRepresentativeBankAccountNumber
+                setter: setFiscalRepresentativeBankAccountNumber
+            type: string

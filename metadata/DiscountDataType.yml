@@ -1,0 +1,32 @@
+Dream\NavInvoiceData\DiscountDataType:
+    properties:
+        discountDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: discountDescription
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDiscountDescription
+                setter: setDiscountDescription
+            type: string
+        discountValue:
+            expose: true
+            access_type: public_method
+            serialized_name: discountValue
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDiscountValue
+                setter: setDiscountValue
+            type: float
+        discountRate:
+            expose: true
+            access_type: public_method
+            serialized_name: discountRate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getDiscountRate
+                setter: setDiscountRate
+            type: float

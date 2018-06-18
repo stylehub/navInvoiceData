@@ -1,0 +1,52 @@
+Dream\NavInvoiceData\LineAmountsNormalType:
+    properties:
+        lineNetAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: lineNetAmount
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineNetAmount
+                setter: setLineNetAmount
+            type: float
+        lineVatRate:
+            expose: true
+            access_type: public_method
+            serialized_name: lineVatRate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineVatRate
+                setter: setLineVatRate
+            type: Dream\NavInvoiceData\VatRateType
+        lineVatAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: lineVatAmount
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineVatAmount
+                setter: setLineVatAmount
+            type: float
+        lineVatAmountHUF:
+            expose: true
+            access_type: public_method
+            serialized_name: lineVatAmountHUF
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineVatAmountHUF
+                setter: setLineVatAmountHUF
+            type: float
+        lineGrossAmountNormal:
+            expose: true
+            access_type: public_method
+            serialized_name: lineGrossAmountNormal
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLineGrossAmountNormal
+                setter: setLineGrossAmountNormal
+            type: float

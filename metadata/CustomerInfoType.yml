@@ -1,0 +1,72 @@
+Dream\NavInvoiceData\CustomerInfoType:
+    properties:
+        customerTaxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: customerTaxNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCustomerTaxNumber
+                setter: setCustomerTaxNumber
+            type: Dream\NavInvoiceData\TaxNumberType
+        groupMemberTaxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: groupMemberTaxNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getGroupMemberTaxNumber
+                setter: setGroupMemberTaxNumber
+            type: Dream\NavInvoiceData\TaxNumberType
+        communityVatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: communityVatNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCommunityVatNumber
+                setter: setCommunityVatNumber
+            type: string
+        thirdStateTaxId:
+            expose: true
+            access_type: public_method
+            serialized_name: thirdStateTaxId
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getThirdStateTaxId
+                setter: setThirdStateTaxId
+            type: string
+        customerName:
+            expose: true
+            access_type: public_method
+            serialized_name: customerName
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCustomerName
+                setter: setCustomerName
+            type: string
+        customerAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: customerAddress
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCustomerAddress
+                setter: setCustomerAddress
+            type: Dream\NavInvoiceData\AddressType
+        customerBankAccountNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: customerBankAccountNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCustomerBankAccountNumber
+                setter: setCustomerBankAccountNumber
+            type: string

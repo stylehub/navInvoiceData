@@ -1,0 +1,166 @@
+Dream\NavInvoiceData\InvoiceDataType:
+    properties:
+        invoiceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceNumber
+                setter: setInvoiceNumber
+            type: string
+        invoiceCategory:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceCategory
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceCategory
+                setter: setInvoiceCategory
+            type: string
+        invoiceIssueDate:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceIssueDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceIssueDate
+                setter: setInvoiceIssueDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        invoiceDeliveryDate:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceDeliveryDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceDeliveryDate
+                setter: setInvoiceDeliveryDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        invoiceDeliveryPeriodStart:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceDeliveryPeriodStart
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceDeliveryPeriodStart
+                setter: setInvoiceDeliveryPeriodStart
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        invoiceDeliveryPeriodEnd:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceDeliveryPeriodEnd
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceDeliveryPeriodEnd
+                setter: setInvoiceDeliveryPeriodEnd
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        invoiceAccountingDeliveryDate:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceAccountingDeliveryDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceAccountingDeliveryDate
+                setter: setInvoiceAccountingDeliveryDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: currencyCode
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            type: string
+        exchangeRate:
+            expose: true
+            access_type: public_method
+            serialized_name: exchangeRate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getExchangeRate
+                setter: setExchangeRate
+            type: float
+        selfBillingIndicator:
+            expose: true
+            access_type: public_method
+            serialized_name: selfBillingIndicator
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSelfBillingIndicator
+                setter: setSelfBillingIndicator
+            type: boolean
+        paymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: paymentMethod
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPaymentMethod
+                setter: setPaymentMethod
+            type: string
+        paymentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: paymentDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getPaymentDate
+                setter: setPaymentDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        cashAccountingIndicator:
+            expose: true
+            access_type: public_method
+            serialized_name: cashAccountingIndicator
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCashAccountingIndicator
+                setter: setCashAccountingIndicator
+            type: boolean
+        invoiceAppearance:
+            expose: true
+            access_type: public_method
+            serialized_name: invoiceAppearance
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getInvoiceAppearance
+                setter: setInvoiceAppearance
+            type: string
+        electronicInvoiceHash:
+            expose: true
+            access_type: public_method
+            serialized_name: electronicInvoiceHash
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getElectronicInvoiceHash
+                setter: setElectronicInvoiceHash
+            type: string
+        additionalInvoiceData:
+            expose: true
+            access_type: public_method
+            serialized_name: additionalInvoiceData
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getAdditionalInvoiceData
+                setter: setAdditionalInvoiceData
+            xml_list:
+                inline: true
+                entry_name: additionalInvoiceData
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            type: array<Dream\NavInvoiceData\AdditionalDataType>

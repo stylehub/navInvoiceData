@@ -1,0 +1,32 @@
+Dream\NavInvoiceData\VesselType:
+    properties:
+        length:
+            expose: true
+            access_type: public_method
+            serialized_name: length
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getLength
+                setter: setLength
+            type: float
+        activityReferred:
+            expose: true
+            access_type: public_method
+            serialized_name: activityReferred
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getActivityReferred
+                setter: setActivityReferred
+            type: boolean
+        sailedHours:
+            expose: true
+            access_type: public_method
+            serialized_name: sailedHours
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSailedHours
+                setter: setSailedHours
+            type: float

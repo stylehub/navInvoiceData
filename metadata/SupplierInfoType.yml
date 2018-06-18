@@ -1,0 +1,82 @@
+Dream\NavInvoiceData\SupplierInfoType:
+    properties:
+        supplierTaxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: supplierTaxNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSupplierTaxNumber
+                setter: setSupplierTaxNumber
+            type: Dream\NavInvoiceData\TaxNumberType
+        groupMemberTaxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: groupMemberTaxNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getGroupMemberTaxNumber
+                setter: setGroupMemberTaxNumber
+            type: Dream\NavInvoiceData\TaxNumberType
+        communityVatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: communityVatNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getCommunityVatNumber
+                setter: setCommunityVatNumber
+            type: string
+        supplierName:
+            expose: true
+            access_type: public_method
+            serialized_name: supplierName
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSupplierName
+                setter: setSupplierName
+            type: string
+        supplierAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: supplierAddress
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSupplierAddress
+                setter: setSupplierAddress
+            type: Dream\NavInvoiceData\AddressType
+        supplierBankAccountNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: supplierBankAccountNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getSupplierBankAccountNumber
+                setter: setSupplierBankAccountNumber
+            type: string
+        individualExemption:
+            expose: true
+            access_type: public_method
+            serialized_name: individualExemption
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getIndividualExemption
+                setter: setIndividualExemption
+            type: boolean
+        exciseLicenceNum:
+            expose: true
+            access_type: public_method
+            serialized_name: exciseLicenceNum
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getExciseLicenceNum
+                setter: setExciseLicenceNum
+            type: string

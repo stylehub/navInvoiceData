@@ -1,0 +1,52 @@
+Dream\NavInvoiceData\PaymentEvidenceDocumentDataType:
+    properties:
+        evidenceDocumentNo:
+            expose: true
+            access_type: public_method
+            serialized_name: evidenceDocumentNo
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getEvidenceDocumentNo
+                setter: setEvidenceDocumentNo
+            type: string
+        evidenceDocumentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: evidenceDocumentDate
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getEvidenceDocumentDate
+                setter: setEvidenceDocumentDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        obligatedName:
+            expose: true
+            access_type: public_method
+            serialized_name: obligatedName
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getObligatedName
+                setter: setObligatedName
+            type: string
+        obligatedAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: obligatedAddress
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getObligatedAddress
+                setter: setObligatedAddress
+            type: Dream\NavInvoiceData\AddressType
+        obligatedTaxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: obligatedTaxNumber
+            xml_element:
+                namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
+            accessor:
+                getter: getObligatedTaxNumber
+                setter: setObligatedTaxNumber
+            type: Dream\NavInvoiceData\TaxNumberType
