@@ -24,7 +24,7 @@ class SerializerFactory
         }
 
         $serializerBuilder
-            ->addMetadataDir(realpath(__DIR__ . '/../metadata'), 'Dream\NavInvoiceExport\Data')
+            ->addMetadataDir(realpath(__DIR__ . '/../metadata'), 'Dream\NavInvoiceData')
             ->setPropertyNamingStrategy(new IdenticalPropertyNamingStrategy())
             ->setCacheDir($cacheDir)
             ->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
