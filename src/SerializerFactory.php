@@ -1,6 +1,7 @@
 <?php
 namespace Dream\NavInvoiceData;
 
+use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
 use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
@@ -24,6 +25,7 @@ class SerializerFactory
 
         $serializerBuilder
             ->addMetadataDir(realpath(__DIR__ . '/../metadata'), 'Dream\NavInvoiceExport\Data')
+            ->setPropertyNamingStrategy(new IdenticalPropertyNamingStrategy())
             ->setCacheDir($cacheDir)
             ->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
                 $serializerBuilder->addDefaultHandlers();
