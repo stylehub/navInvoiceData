@@ -17,7 +17,7 @@ class SerializerFactory
     {
         $serializerBuilder = SerializerBuilder::create();
 
-        $cacheDir = realpath(__DIR__ . '/../temp');
+        $cacheDir = realpath(__DIR__ . '/..') . '/temp';
         if (!file_exists($cacheDir)) {
             mkdir($cacheDir, true);
         }
