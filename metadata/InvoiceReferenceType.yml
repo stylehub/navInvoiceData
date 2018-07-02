@@ -19,7 +19,7 @@ Dream\NavInvoiceData\InvoiceReferenceType:
             accessor:
                 getter: getModificationIssueDate
                 setter: setModificationIssueDate
-            type: DateTime<'Y-m-d\TH:i:s.000\Z', 'UTC'>
+            type: 'DateTime<''Y-m-d''>'
         modificationTimestamp:
             expose: true
             access_type: public_method
@@ -29,7 +29,7 @@ Dream\NavInvoiceData\InvoiceReferenceType:
             accessor:
                 getter: getModificationTimestamp
                 setter: setModificationTimestamp
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime<'Y-m-d\TH:i:s.000\Z', 'UTC'>
         lastModificationReference:
             expose: true
             access_type: public_method

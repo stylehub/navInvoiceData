@@ -32,7 +32,6 @@ Dream\NavInvoiceData\LineType:
             type: array<integer>
             xml_list:
                 inline: false
-                skip_when_empty: true
                 entry_name: referenceToOtherLine
                 namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
         advanceIndicator:
@@ -57,7 +56,6 @@ Dream\NavInvoiceData\LineType:
             type: array<Dream\NavInvoiceData\ProductCodeType>
             xml_list:
                 inline: false
-                skip_when_empty: true
                 entry_name: productCode
                 namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
         lineDescription:
@@ -192,7 +190,6 @@ Dream\NavInvoiceData\LineType:
             type: array<string>
             xml_list:
                 inline: false
-                skip_when_empty: true
                 entry_name: ekaerId
                 namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
         obligatedForProductFee:
