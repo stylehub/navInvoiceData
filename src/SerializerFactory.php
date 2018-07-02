@@ -13,8 +13,8 @@ class SerializerFactory
         $serializerBuilder = SerializerBuilder::create();
 
         $serializerBuilder
-            ->addMetadataDir(__DIR__ . '../metadata', 'Dream\NavInvoiceExport\Data')
-            ->setCacheDir(__DIR__ . '../temp/jmscache')
+            ->addMetadataDir(realpath(__DIR__ . '/../metadata'), 'Dream\NavInvoiceData')
+            ->setCacheDir(realpath(__DIR__ . '/../temp/jmscache'))
             ->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
                 $serializerBuilder->addDefaultHandlers();
                 $handler->registerSubscribingHandler(new XmlSchemaDateHandler()); // XMLSchema date handling
