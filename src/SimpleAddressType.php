@@ -12,21 +12,25 @@ class SimpleAddressType
 {
 
     /**
-     * Az országkód az ISO 3166 alpha-2 szabvány szerintISO 3166 alpha-2 country code
+     * Az országkód az ISO 3166 alpha-2 szabvány szerintISO 3166 alpha-2 country
+     * code
      *
      * @property string $countryCode
      */
     private $countryCode = null;
 
     /**
-     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2 alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a given country)
+     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2
+     * alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a
+     * given country)
      *
      * @property string $region
      */
     private $region = null;
 
     /**
-     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
+     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell
+     * kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
      *
      * @property string $postalCode
      */
@@ -40,7 +44,9 @@ class SimpleAddressType
     private $city = null;
 
     /**
-     * További címadatok (pl. közterület neve és jellege, házszám, emelet, ajtó, helyrajzi szám, stb.)Further address data (name and type of public place, house number, floor, door, lot number, etc.)
+     * További címadatok (pl. közterület neve és jellege, házszám, emelet,
+     * ajtó, helyrajzi szám, stb.)Further address data (name and type of public
+     * place, house number, floor, door, lot number, etc.)
      *
      * @property string $additionalAddressDetail
      */
@@ -49,7 +55,8 @@ class SimpleAddressType
     /**
      * Gets as countryCode
      *
-     * Az országkód az ISO 3166 alpha-2 szabvány szerintISO 3166 alpha-2 country code
+     * Az országkód az ISO 3166 alpha-2 szabvány szerintISO 3166 alpha-2 country
+     * code
      *
      * @return string
      */
@@ -61,7 +68,8 @@ class SimpleAddressType
     /**
      * Sets a new countryCode
      *
-     * Az országkód az ISO 3166 alpha-2 szabvány szerintISO 3166 alpha-2 country code
+     * Az országkód az ISO 3166 alpha-2 szabvány szerintISO 3166 alpha-2 country
+     * code
      *
      * @param string $countryCode
      * @return self
@@ -75,7 +83,9 @@ class SimpleAddressType
     /**
      * Gets as region
      *
-     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2 alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a given country)
+     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2
+     * alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a
+     * given country)
      *
      * @return string
      */
@@ -87,7 +97,9 @@ class SimpleAddressType
     /**
      * Sets a new region
      *
-     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2 alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a given country)
+     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2
+     * alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a
+     * given country)
      *
      * @param string $region
      * @return self
@@ -101,7 +113,8 @@ class SimpleAddressType
     /**
      * Gets as postalCode
      *
-     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
+     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell
+     * kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
      *
      * @return string
      */
@@ -113,7 +126,8 @@ class SimpleAddressType
     /**
      * Sets a new postalCode
      *
-     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
+     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell
+     * kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
      *
      * @param string $postalCode
      * @return self
@@ -153,7 +167,9 @@ class SimpleAddressType
     /**
      * Gets as additionalAddressDetail
      *
-     * További címadatok (pl. közterület neve és jellege, házszám, emelet, ajtó, helyrajzi szám, stb.)Further address data (name and type of public place, house number, floor, door, lot number, etc.)
+     * További címadatok (pl. közterület neve és jellege, házszám, emelet,
+     * ajtó, helyrajzi szám, stb.)Further address data (name and type of public
+     * place, house number, floor, door, lot number, etc.)
      *
      * @return string
      */
@@ -165,7 +181,9 @@ class SimpleAddressType
     /**
      * Sets a new additionalAddressDetail
      *
-     * További címadatok (pl. közterület neve és jellege, házszám, emelet, ajtó, helyrajzi szám, stb.)Further address data (name and type of public place, house number, floor, door, lot number, etc.)
+     * További címadatok (pl. közterület neve és jellege, házszám, emelet,
+     * ajtó, helyrajzi szám, stb.)Further address data (name and type of public
+     * place, house number, floor, door, lot number, etc.)
      *
      * @param string $additionalAddressDetail
      * @return self

@@ -19,7 +19,8 @@ class InvoiceType
     private $invoiceExchange = null;
 
     /**
-     * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of technical annulment concerning previous data exchange
+     * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of
+     * technical annulment concerning previous data exchange
      *
      * @property \Dream\NavInvoiceData\InvoiceAnnulmentType $invoiceAnnulment
      */
@@ -54,7 +55,8 @@ class InvoiceType
     /**
      * Gets as invoiceAnnulment
      *
-     * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of technical annulment concerning previous data exchange
+     * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of
+     * technical annulment concerning previous data exchange
      *
      * @return \Dream\NavInvoiceData\InvoiceAnnulmentType
      */
@@ -66,7 +68,8 @@ class InvoiceType
     /**
      * Sets a new invoiceAnnulment
      *
-     * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of technical annulment concerning previous data exchange
+     * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of
+     * technical annulment concerning previous data exchange
      *
      * @param \Dream\NavInvoiceData\InvoiceAnnulmentType $invoiceAnnulment
      * @return self

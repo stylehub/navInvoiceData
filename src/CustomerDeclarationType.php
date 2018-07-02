@@ -5,7 +5,10 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing CustomerDeclarationType
  *
- * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése alól, akkor az érintett termékáramShould the supplier, based on statement given by the purchaser, be exempted from paying product fee, then the product stream affected
+ * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése
+ * alól, akkor az érintett termékáramShould the supplier, based on statement
+ * given by the purchaser, be exempted from paying product fee, then the product
+ * stream affected
  * XSD Type: CustomerDeclarationType
  */
 class CustomerDeclarationType
@@ -19,7 +22,8 @@ class CustomerDeclarationType
     private $productStream = null;
 
     /**
-     * Termékdíj köteles termék tömege kilogrammbanWeight of product fee obliged product in kilogram
+     * Termékdíj köteles termék tömege kilogrammbanWeight of product fee obliged
+     * product in kilogram
      *
      * @property float $productFeeWeight
      */
@@ -54,7 +58,8 @@ class CustomerDeclarationType
     /**
      * Gets as productFeeWeight
      *
-     * Termékdíj köteles termék tömege kilogrammbanWeight of product fee obliged product in kilogram
+     * Termékdíj köteles termék tömege kilogrammbanWeight of product fee obliged
+     * product in kilogram
      *
      * @return float
      */
@@ -66,7 +71,8 @@ class CustomerDeclarationType
     /**
      * Sets a new productFeeWeight
      *
-     * Termékdíj köteles termék tömege kilogrammbanWeight of product fee obliged product in kilogram
+     * Termékdíj köteles termék tömege kilogrammbanWeight of product fee obliged
+     * product in kilogram
      *
      * @param float $productFeeWeight
      * @return self

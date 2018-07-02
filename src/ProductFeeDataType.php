@@ -19,7 +19,8 @@ class ProductFeeDataType
     private $productFeeCode = null;
 
     /**
-     * A termékdíjjal érintett termék mennyiségeQuantity of product, according to product charge
+     * A termékdíjjal érintett termék mennyiségeQuantity of product, according to
+     * product charge
      *
      * @property float $productFeeQuantity
      */
@@ -75,7 +76,8 @@ class ProductFeeDataType
     /**
      * Gets as productFeeQuantity
      *
-     * A termékdíjjal érintett termék mennyiségeQuantity of product, according to product charge
+     * A termékdíjjal érintett termék mennyiségeQuantity of product, according to
+     * product charge
      *
      * @return float
      */
@@ -87,7 +89,8 @@ class ProductFeeDataType
     /**
      * Sets a new productFeeQuantity
      *
-     * A termékdíjjal érintett termék mennyiségeQuantity of product, according to product charge
+     * A termékdíjjal érintett termék mennyiségeQuantity of product, according to
+     * product charge
      *
      * @param float $productFeeQuantity
      * @return self

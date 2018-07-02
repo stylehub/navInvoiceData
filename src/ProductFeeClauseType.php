@@ -5,21 +5,28 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing ProductFeeClauseType
  *
- * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti, tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on Environmental Protection Product Fee (related to the item)
+ * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti,
+ * tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on
+ * Environmental Protection Product Fee (related to the item)
  * XSD Type: ProductFeeClauseType
  */
 class ProductFeeClauseType
 {
 
     /**
-     * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos adatokData in connection with takeover of environmental protection product fee
+     * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos
+     * adatokData in connection with takeover of environmental protection product fee
      *
-     * @property \Dream\NavInvoiceData\ProductFeeTakeoverDataType $productFeeTakeoverData
+     * @property \Dream\NavInvoiceData\ProductFeeTakeoverDataType
+     * $productFeeTakeoverData
      */
     private $productFeeTakeoverData = null;
 
     /**
-     * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése alól, akkor az érintett termékáramShould the supplier, based on statement given by the purchaser, be exempted from paying product fee, then the product stream affected
+     * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése
+     * alól, akkor az érintett termékáramShould the supplier, based on statement
+     * given by the purchaser, be exempted from paying product fee, then the product
+     * stream affected
      *
      * @property \Dream\NavInvoiceData\CustomerDeclarationType $customerDeclaration
      */
@@ -28,7 +35,8 @@ class ProductFeeClauseType
     /**
      * Gets as productFeeTakeoverData
      *
-     * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos adatokData in connection with takeover of environmental protection product fee
+     * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos
+     * adatokData in connection with takeover of environmental protection product fee
      *
      * @return \Dream\NavInvoiceData\ProductFeeTakeoverDataType
      */
@@ -40,7 +48,8 @@ class ProductFeeClauseType
     /**
      * Sets a new productFeeTakeoverData
      *
-     * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos adatokData in connection with takeover of environmental protection product fee
+     * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos
+     * adatokData in connection with takeover of environmental protection product fee
      *
      * @param \Dream\NavInvoiceData\ProductFeeTakeoverDataType $productFeeTakeoverData
      * @return self
@@ -54,7 +63,10 @@ class ProductFeeClauseType
     /**
      * Gets as customerDeclaration
      *
-     * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése alól, akkor az érintett termékáramShould the supplier, based on statement given by the purchaser, be exempted from paying product fee, then the product stream affected
+     * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése
+     * alól, akkor az érintett termékáramShould the supplier, based on statement
+     * given by the purchaser, be exempted from paying product fee, then the product
+     * stream affected
      *
      * @return \Dream\NavInvoiceData\CustomerDeclarationType
      */
@@ -66,7 +78,10 @@ class ProductFeeClauseType
     /**
      * Sets a new customerDeclaration
      *
-     * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése alól, akkor az érintett termékáramShould the supplier, based on statement given by the purchaser, be exempted from paying product fee, then the product stream affected
+     * Ha az eladó a vevő nyilatkozata alapján mentesül a termékdíj megfizetése
+     * alól, akkor az érintett termékáramShould the supplier, based on statement
+     * given by the purchaser, be exempted from paying product fee, then the product
+     * stream affected
      *
      * @param \Dream\NavInvoiceData\CustomerDeclarationType $customerDeclaration
      * @return self

@@ -19,14 +19,18 @@ class DiscountDataType
     private $discountDescription = null;
 
     /**
-     * Tételhez tartozó árengedmény összege a számla pénznemében, ha az egységár nem tartalmazzaTotal amount of discount per item expressed in the currency of the invoice if not included in the unit price
+     * Tételhez tartozó árengedmény összege a számla pénznemében, ha az
+     * egységár nem tartalmazzaTotal amount of discount per item expressed in the
+     * currency of the invoice if not included in the unit price
      *
      * @property float $discountValue
      */
     private $discountValue = null;
 
     /**
-     * Tételhez tartozó árengedmény aránya, ha az egységár nem tartalmazzaRate of discount per item expressed in the currency of the invoice if not included in the unit price
+     * Tételhez tartozó árengedmény aránya, ha az egységár nem tartalmazzaRate
+     * of discount per item expressed in the currency of the invoice if not included in
+     * the unit price
      *
      * @property float $discountRate
      */
@@ -61,7 +65,9 @@ class DiscountDataType
     /**
      * Gets as discountValue
      *
-     * Tételhez tartozó árengedmény összege a számla pénznemében, ha az egységár nem tartalmazzaTotal amount of discount per item expressed in the currency of the invoice if not included in the unit price
+     * Tételhez tartozó árengedmény összege a számla pénznemében, ha az
+     * egységár nem tartalmazzaTotal amount of discount per item expressed in the
+     * currency of the invoice if not included in the unit price
      *
      * @return float
      */
@@ -73,7 +79,9 @@ class DiscountDataType
     /**
      * Sets a new discountValue
      *
-     * Tételhez tartozó árengedmény összege a számla pénznemében, ha az egységár nem tartalmazzaTotal amount of discount per item expressed in the currency of the invoice if not included in the unit price
+     * Tételhez tartozó árengedmény összege a számla pénznemében, ha az
+     * egységár nem tartalmazzaTotal amount of discount per item expressed in the
+     * currency of the invoice if not included in the unit price
      *
      * @param float $discountValue
      * @return self
@@ -87,7 +95,9 @@ class DiscountDataType
     /**
      * Gets as discountRate
      *
-     * Tételhez tartozó árengedmény aránya, ha az egységár nem tartalmazzaRate of discount per item expressed in the currency of the invoice if not included in the unit price
+     * Tételhez tartozó árengedmény aránya, ha az egységár nem tartalmazzaRate
+     * of discount per item expressed in the currency of the invoice if not included in
+     * the unit price
      *
      * @return float
      */
@@ -99,7 +109,9 @@ class DiscountDataType
     /**
      * Sets a new discountRate
      *
-     * Tételhez tartozó árengedmény aránya, ha az egységár nem tartalmazzaRate of discount per item expressed in the currency of the invoice if not included in the unit price
+     * Tételhez tartozó árengedmény aránya, ha az egységár nem tartalmazzaRate
+     * of discount per item expressed in the currency of the invoice if not included in
+     * the unit price
      *
      * @param float $discountRate
      * @return self

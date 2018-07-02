@@ -5,14 +5,18 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing PaymentEvidenceDocumentDataType
  *
- * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv. 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the declaration submitted on the product fee according to the Paragraph (3), Section 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
+ * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv.
+ * 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the
+ * declaration submitted on the product fee according to the Paragraph (3), Section
+ * 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
  * XSD Type: PaymentEvidenceDocumentDataType
  */
 class PaymentEvidenceDocumentDataType
 {
 
     /**
-     * Számla sorszáma vagy egyéb okirat azonosító számaSequential number of the invoice, or other document considered as such
+     * Számla sorszáma vagy egyéb okirat azonosító számaSequential number of the
+     * invoice, or other document considered as such
      *
      * @property string $evidenceDocumentNo
      */
@@ -49,7 +53,8 @@ class PaymentEvidenceDocumentDataType
     /**
      * Gets as evidenceDocumentNo
      *
-     * Számla sorszáma vagy egyéb okirat azonosító számaSequential number of the invoice, or other document considered as such
+     * Számla sorszáma vagy egyéb okirat azonosító számaSequential number of the
+     * invoice, or other document considered as such
      *
      * @return string
      */
@@ -61,7 +66,8 @@ class PaymentEvidenceDocumentDataType
     /**
      * Sets a new evidenceDocumentNo
      *
-     * Számla sorszáma vagy egyéb okirat azonosító számaSequential number of the invoice, or other document considered as such
+     * Számla sorszáma vagy egyéb okirat azonosító számaSequential number of the
+     * invoice, or other document considered as such
      *
      * @param string $evidenceDocumentNo
      * @return self

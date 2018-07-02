@@ -33,7 +33,9 @@ class FiscalRepresentativeType
     private $fiscalRepresentativeAddress = null;
 
     /**
-     * Pénzügyi képviselő által a számla kibocsátó (eladó) számára megnyitott bankszámla bankszámlaszámaBank account number opened by the fiscal representative for the issuer of the invoice (supplier)
+     * Pénzügyi képviselő által a számla kibocsátó (eladó) számára
+     * megnyitott bankszámla bankszámlaszámaBank account number opened by the fiscal
+     * representative for the issuer of the invoice (supplier)
      *
      * @property string $fiscalRepresentativeBankAccountNumber
      */
@@ -120,7 +122,9 @@ class FiscalRepresentativeType
     /**
      * Gets as fiscalRepresentativeBankAccountNumber
      *
-     * Pénzügyi képviselő által a számla kibocsátó (eladó) számára megnyitott bankszámla bankszámlaszámaBank account number opened by the fiscal representative for the issuer of the invoice (supplier)
+     * Pénzügyi képviselő által a számla kibocsátó (eladó) számára
+     * megnyitott bankszámla bankszámlaszámaBank account number opened by the fiscal
+     * representative for the issuer of the invoice (supplier)
      *
      * @return string
      */
@@ -132,7 +136,9 @@ class FiscalRepresentativeType
     /**
      * Sets a new fiscalRepresentativeBankAccountNumber
      *
-     * Pénzügyi képviselő által a számla kibocsátó (eladó) számára megnyitott bankszámla bankszámlaszámaBank account number opened by the fiscal representative for the issuer of the invoice (supplier)
+     * Pénzügyi képviselő által a számla kibocsátó (eladó) számára
+     * megnyitott bankszámla bankszámlaszámaBank account number opened by the fiscal
+     * representative for the issuer of the invoice (supplier)
      *
      * @param string $fiscalRepresentativeBankAccountNumber
      * @return self

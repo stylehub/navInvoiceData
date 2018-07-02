@@ -29,7 +29,7 @@ Dream\NavInvoiceData\InvoiceDataType:
             accessor:
                 getter: getInvoiceIssueDate
                 setter: setInvoiceIssueDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         invoiceDeliveryDate:
             expose: true
             access_type: public_method
@@ -39,7 +39,7 @@ Dream\NavInvoiceData\InvoiceDataType:
             accessor:
                 getter: getInvoiceDeliveryDate
                 setter: setInvoiceDeliveryDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         invoiceDeliveryPeriodStart:
             expose: true
             access_type: public_method
@@ -49,7 +49,7 @@ Dream\NavInvoiceData\InvoiceDataType:
             accessor:
                 getter: getInvoiceDeliveryPeriodStart
                 setter: setInvoiceDeliveryPeriodStart
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         invoiceDeliveryPeriodEnd:
             expose: true
             access_type: public_method
@@ -59,7 +59,7 @@ Dream\NavInvoiceData\InvoiceDataType:
             accessor:
                 getter: getInvoiceDeliveryPeriodEnd
                 setter: setInvoiceDeliveryPeriodEnd
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         invoiceAccountingDeliveryDate:
             expose: true
             access_type: public_method
@@ -69,7 +69,7 @@ Dream\NavInvoiceData\InvoiceDataType:
             accessor:
                 getter: getInvoiceAccountingDeliveryDate
                 setter: setInvoiceAccountingDeliveryDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         currencyCode:
             expose: true
             access_type: public_method
@@ -119,7 +119,7 @@ Dream\NavInvoiceData\InvoiceDataType:
             accessor:
                 getter: getPaymentDate
                 setter: setPaymentDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         cashAccountingIndicator:
             expose: true
             access_type: public_method

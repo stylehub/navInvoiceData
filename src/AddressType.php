@@ -5,7 +5,8 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing AddressType
  *
- * Cím típus, amely vagy egyszerű, vagy részletes címet tartalmazFormat of address that includes either a simple or a detailed address
+ * Cím típus, amely vagy egyszerű, vagy részletes címet tartalmazFormat of
+ * address that includes either a simple or a detailed address
  * XSD Type: AddressType
  */
 class AddressType

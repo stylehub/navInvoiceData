@@ -19,7 +19,9 @@ class AircraftType
     private $takeOffWeight = null;
 
     /**
-     * Értéke true ha a jármű az ÁFA tv. 259.§ 25. c) szerinti kivétel alá tartozikThe value is true if the means of transport is exempt from VAT as per section 259 [25] (c)
+     * Értéke true ha a jármű az ÁFA tv. 259.§ 25. c) szerinti kivétel alá
+     * tartozikThe value is true if the means of transport is exempt from VAT as per
+     * section 259 [25] (c)
      *
      * @property boolean $airCargo
      */
@@ -61,7 +63,9 @@ class AircraftType
     /**
      * Gets as airCargo
      *
-     * Értéke true ha a jármű az ÁFA tv. 259.§ 25. c) szerinti kivétel alá tartozikThe value is true if the means of transport is exempt from VAT as per section 259 [25] (c)
+     * Értéke true ha a jármű az ÁFA tv. 259.§ 25. c) szerinti kivétel alá
+     * tartozikThe value is true if the means of transport is exempt from VAT as per
+     * section 259 [25] (c)
      *
      * @return boolean
      */
@@ -73,7 +77,9 @@ class AircraftType
     /**
      * Sets a new airCargo
      *
-     * Értéke true ha a jármű az ÁFA tv. 259.§ 25. c) szerinti kivétel alá tartozikThe value is true if the means of transport is exempt from VAT as per section 259 [25] (c)
+     * Értéke true ha a jármű az ÁFA tv. 259.§ 25. c) szerinti kivétel alá
+     * tartozikThe value is true if the means of transport is exempt from VAT as per
+     * section 259 [25] (c)
      *
      * @param boolean $airCargo
      * @return self

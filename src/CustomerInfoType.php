@@ -12,14 +12,20 @@ class CustomerInfoType
 {
 
     /**
-     * Adószám, amely alatt a számlán szereplő termékbeszerzés vagy szolgáltatás igénybevétele történt. Lehet csoportazonosító szám isTax number or group identification number, under which the purchase of goods or services is done
+     * Adószám, amely alatt a számlán szereplő termékbeszerzés vagy
+     * szolgáltatás igénybevétele történt. Lehet csoportazonosító szám isTax
+     * number or group identification number, under which the purchase of goods or
+     * services is done
      *
      * @property \Dream\NavInvoiceData\TaxNumberType $customerTaxNumber
      */
     private $customerTaxNumber = null;
 
     /**
-     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás igénybevétele csoportazonosító szám alatt történtTax number of group member, when the purchase of goods or services is done under group identification number
+     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás
+     * igénybevétele csoportazonosító szám alatt történtTax number of group
+     * member, when the purchase of goods or services is done under group
+     * identification number
      *
      * @property \Dream\NavInvoiceData\TaxNumberType $groupMemberTaxNumber
      */
@@ -63,7 +69,10 @@ class CustomerInfoType
     /**
      * Gets as customerTaxNumber
      *
-     * Adószám, amely alatt a számlán szereplő termékbeszerzés vagy szolgáltatás igénybevétele történt. Lehet csoportazonosító szám isTax number or group identification number, under which the purchase of goods or services is done
+     * Adószám, amely alatt a számlán szereplő termékbeszerzés vagy
+     * szolgáltatás igénybevétele történt. Lehet csoportazonosító szám isTax
+     * number or group identification number, under which the purchase of goods or
+     * services is done
      *
      * @return \Dream\NavInvoiceData\TaxNumberType
      */
@@ -75,7 +84,10 @@ class CustomerInfoType
     /**
      * Sets a new customerTaxNumber
      *
-     * Adószám, amely alatt a számlán szereplő termékbeszerzés vagy szolgáltatás igénybevétele történt. Lehet csoportazonosító szám isTax number or group identification number, under which the purchase of goods or services is done
+     * Adószám, amely alatt a számlán szereplő termékbeszerzés vagy
+     * szolgáltatás igénybevétele történt. Lehet csoportazonosító szám isTax
+     * number or group identification number, under which the purchase of goods or
+     * services is done
      *
      * @param \Dream\NavInvoiceData\TaxNumberType $customerTaxNumber
      * @return self
@@ -89,7 +101,10 @@ class CustomerInfoType
     /**
      * Gets as groupMemberTaxNumber
      *
-     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás igénybevétele csoportazonosító szám alatt történtTax number of group member, when the purchase of goods or services is done under group identification number
+     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás
+     * igénybevétele csoportazonosító szám alatt történtTax number of group
+     * member, when the purchase of goods or services is done under group
+     * identification number
      *
      * @return \Dream\NavInvoiceData\TaxNumberType
      */
@@ -101,7 +116,10 @@ class CustomerInfoType
     /**
      * Sets a new groupMemberTaxNumber
      *
-     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás igénybevétele csoportazonosító szám alatt történtTax number of group member, when the purchase of goods or services is done under group identification number
+     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás
+     * igénybevétele csoportazonosító szám alatt történtTax number of group
+     * member, when the purchase of goods or services is done under group
+     * identification number
      *
      * @param \Dream\NavInvoiceData\TaxNumberType $groupMemberTaxNumber
      * @return self

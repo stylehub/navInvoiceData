@@ -12,14 +12,17 @@ class SummarySimplifiedType
 {
 
     /**
-     * Egyszerűsített számla esetén az adótartalom arányaIn the case of a simplified invoice, VAT content rate
+     * Egyszerűsített számla esetén az adótartalom arányaIn the case of a
+     * simplified invoice, VAT content rate
      *
      * @property float $vatContent
      */
     private $vatContent = null;
 
     /**
-     * Az adott adótartalomhoz tartozó értékesítés vagy szolgáltatásnyújtás bruttó összege a számla pénznemébenThe gross amount of the sale or service for the given tax amount in the currency of the invoice
+     * Az adott adótartalomhoz tartozó értékesítés vagy szolgáltatásnyújtás
+     * bruttó összege a számla pénznemébenThe gross amount of the sale or service
+     * for the given tax amount in the currency of the invoice
      *
      * @property float $vatContentGrossAmount
      */
@@ -28,7 +31,8 @@ class SummarySimplifiedType
     /**
      * Gets as vatContent
      *
-     * Egyszerűsített számla esetén az adótartalom arányaIn the case of a simplified invoice, VAT content rate
+     * Egyszerűsített számla esetén az adótartalom arányaIn the case of a
+     * simplified invoice, VAT content rate
      *
      * @return float
      */
@@ -40,7 +44,8 @@ class SummarySimplifiedType
     /**
      * Sets a new vatContent
      *
-     * Egyszerűsített számla esetén az adótartalom arányaIn the case of a simplified invoice, VAT content rate
+     * Egyszerűsített számla esetén az adótartalom arányaIn the case of a
+     * simplified invoice, VAT content rate
      *
      * @param float $vatContent
      * @return self
@@ -54,7 +59,9 @@ class SummarySimplifiedType
     /**
      * Gets as vatContentGrossAmount
      *
-     * Az adott adótartalomhoz tartozó értékesítés vagy szolgáltatásnyújtás bruttó összege a számla pénznemébenThe gross amount of the sale or service for the given tax amount in the currency of the invoice
+     * Az adott adótartalomhoz tartozó értékesítés vagy szolgáltatásnyújtás
+     * bruttó összege a számla pénznemébenThe gross amount of the sale or service
+     * for the given tax amount in the currency of the invoice
      *
      * @return float
      */
@@ -66,7 +73,9 @@ class SummarySimplifiedType
     /**
      * Sets a new vatContentGrossAmount
      *
-     * Az adott adótartalomhoz tartozó értékesítés vagy szolgáltatásnyújtás bruttó összege a számla pénznemébenThe gross amount of the sale or service for the given tax amount in the currency of the invoice
+     * Az adott adótartalomhoz tartozó értékesítés vagy szolgáltatásnyújtás
+     * bruttó összege a számla pénznemébenThe gross amount of the sale or service
+     * for the given tax amount in the currency of the invoice
      *
      * @param float $vatContentGrossAmount
      * @return self

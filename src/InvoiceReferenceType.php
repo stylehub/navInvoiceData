@@ -5,42 +5,51 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing InvoiceReferenceType
  *
- * A módosítás vagy érvénytelenítés hivatkozási adataiModification or cancellation reference data
+ * A módosítás vagy érvénytelenítés hivatkozási adataiModification or
+ * cancellation reference data
  * XSD Type: InvoiceReferenceType
  */
 class InvoiceReferenceType
 {
 
     /**
-     * Az eredeti számla sorszáma, melyre a módosítás vonatkozik - ÁFA tv. 170. § (1) c)Sequence number of the original invoice, on which the modification occurs - section 170 (1) c) of the VAT law
+     * Az eredeti számla sorszáma, melyre a módosítás vonatkozik - ÁFA tv. 170.
+     * § (1) c)Sequence number of the original invoice, on which the modification
+     * occurs - section 170 (1) c) of the VAT law
      *
      * @property string $originalInvoiceNumber
      */
     private $originalInvoiceNumber = null;
 
     /**
-     * Módosító okirat kelte - ÁFA tv. 170. § (1) bek. a)Date of issue of the modification document - section 170 (1) a) of the VAT law
+     * Módosító okirat kelte - ÁFA tv. 170. § (1) bek. a)Date of issue of the
+     * modification document - section 170 (1) a) of the VAT law
      *
      * @property \DateTime $modificationIssueDate
      */
     private $modificationIssueDate = null;
 
     /**
-     * A módosító okirat készítésének időbélyege a forrásrendszerben UTC időbenCreation date timestamp of the modification document in UTC time
+     * A módosító okirat készítésének időbélyege a forrásrendszerben UTC
+     * időbenCreation date timestamp of the modification document in UTC time
      *
      * @property \DateTime $modificationTimestamp
      */
     private $modificationTimestamp = null;
 
     /**
-     * Az eredeti számla legutóbbi módosító okiratának sorszáma (ha létezik)Sequence number of last modification document (if exists)
+     * Az eredeti számla legutóbbi módosító okiratának sorszáma (ha
+     * létezik)Sequence number of last modification document (if exists)
      *
      * @property string $lastModificationReference
      */
     private $lastModificationReference = null;
 
     /**
-     * Annak jelzése, hogy a módosítás olyan alapszámlára hivatkozik, amelyről nem történt és nem is fog történni adatszolgáltatásIndicates whether the modification references to an original invoice which is not and will not be exchanged
+     * Annak jelzése, hogy a módosítás olyan alapszámlára hivatkozik, amelyről
+     * nem történt és nem is fog történni adatszolgáltatásIndicates whether the
+     * modification references to an original invoice which is not and will not be
+     * exchanged
      *
      * @property boolean $modifyWithoutMaster
      */
@@ -49,7 +58,9 @@ class InvoiceReferenceType
     /**
      * Gets as originalInvoiceNumber
      *
-     * Az eredeti számla sorszáma, melyre a módosítás vonatkozik - ÁFA tv. 170. § (1) c)Sequence number of the original invoice, on which the modification occurs - section 170 (1) c) of the VAT law
+     * Az eredeti számla sorszáma, melyre a módosítás vonatkozik - ÁFA tv. 170.
+     * § (1) c)Sequence number of the original invoice, on which the modification
+     * occurs - section 170 (1) c) of the VAT law
      *
      * @return string
      */
@@ -61,7 +72,9 @@ class InvoiceReferenceType
     /**
      * Sets a new originalInvoiceNumber
      *
-     * Az eredeti számla sorszáma, melyre a módosítás vonatkozik - ÁFA tv. 170. § (1) c)Sequence number of the original invoice, on which the modification occurs - section 170 (1) c) of the VAT law
+     * Az eredeti számla sorszáma, melyre a módosítás vonatkozik - ÁFA tv. 170.
+     * § (1) c)Sequence number of the original invoice, on which the modification
+     * occurs - section 170 (1) c) of the VAT law
      *
      * @param string $originalInvoiceNumber
      * @return self
@@ -75,7 +88,8 @@ class InvoiceReferenceType
     /**
      * Gets as modificationIssueDate
      *
-     * Módosító okirat kelte - ÁFA tv. 170. § (1) bek. a)Date of issue of the modification document - section 170 (1) a) of the VAT law
+     * Módosító okirat kelte - ÁFA tv. 170. § (1) bek. a)Date of issue of the
+     * modification document - section 170 (1) a) of the VAT law
      *
      * @return \DateTime
      */
@@ -87,7 +101,8 @@ class InvoiceReferenceType
     /**
      * Sets a new modificationIssueDate
      *
-     * Módosító okirat kelte - ÁFA tv. 170. § (1) bek. a)Date of issue of the modification document - section 170 (1) a) of the VAT law
+     * Módosító okirat kelte - ÁFA tv. 170. § (1) bek. a)Date of issue of the
+     * modification document - section 170 (1) a) of the VAT law
      *
      * @param \DateTime $modificationIssueDate
      * @return self
@@ -101,7 +116,8 @@ class InvoiceReferenceType
     /**
      * Gets as modificationTimestamp
      *
-     * A módosító okirat készítésének időbélyege a forrásrendszerben UTC időbenCreation date timestamp of the modification document in UTC time
+     * A módosító okirat készítésének időbélyege a forrásrendszerben UTC
+     * időbenCreation date timestamp of the modification document in UTC time
      *
      * @return \DateTime
      */
@@ -113,7 +129,8 @@ class InvoiceReferenceType
     /**
      * Sets a new modificationTimestamp
      *
-     * A módosító okirat készítésének időbélyege a forrásrendszerben UTC időbenCreation date timestamp of the modification document in UTC time
+     * A módosító okirat készítésének időbélyege a forrásrendszerben UTC
+     * időbenCreation date timestamp of the modification document in UTC time
      *
      * @param \DateTime $modificationTimestamp
      * @return self
@@ -127,7 +144,8 @@ class InvoiceReferenceType
     /**
      * Gets as lastModificationReference
      *
-     * Az eredeti számla legutóbbi módosító okiratának sorszáma (ha létezik)Sequence number of last modification document (if exists)
+     * Az eredeti számla legutóbbi módosító okiratának sorszáma (ha
+     * létezik)Sequence number of last modification document (if exists)
      *
      * @return string
      */
@@ -139,7 +157,8 @@ class InvoiceReferenceType
     /**
      * Sets a new lastModificationReference
      *
-     * Az eredeti számla legutóbbi módosító okiratának sorszáma (ha létezik)Sequence number of last modification document (if exists)
+     * Az eredeti számla legutóbbi módosító okiratának sorszáma (ha
+     * létezik)Sequence number of last modification document (if exists)
      *
      * @param string $lastModificationReference
      * @return self
@@ -153,7 +172,10 @@ class InvoiceReferenceType
     /**
      * Gets as modifyWithoutMaster
      *
-     * Annak jelzése, hogy a módosítás olyan alapszámlára hivatkozik, amelyről nem történt és nem is fog történni adatszolgáltatásIndicates whether the modification references to an original invoice which is not and will not be exchanged
+     * Annak jelzése, hogy a módosítás olyan alapszámlára hivatkozik, amelyről
+     * nem történt és nem is fog történni adatszolgáltatásIndicates whether the
+     * modification references to an original invoice which is not and will not be
+     * exchanged
      *
      * @return boolean
      */
@@ -165,7 +187,10 @@ class InvoiceReferenceType
     /**
      * Sets a new modifyWithoutMaster
      *
-     * Annak jelzése, hogy a módosítás olyan alapszámlára hivatkozik, amelyről nem történt és nem is fog történni adatszolgáltatásIndicates whether the modification references to an original invoice which is not and will not be exchanged
+     * Annak jelzése, hogy a módosítás olyan alapszámlára hivatkozik, amelyről
+     * nem történt és nem is fog történni adatszolgáltatásIndicates whether the
+     * modification references to an original invoice which is not and will not be
+     * exchanged
      *
      * @param boolean $modifyWithoutMaster
      * @return self

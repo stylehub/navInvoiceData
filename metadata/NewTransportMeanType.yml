@@ -39,7 +39,7 @@ Dream\NavInvoiceData\NewTransportMeanType:
             accessor:
                 getter: getFirstEntryIntoService
                 setter: setFirstEntryIntoService
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         vehicle:
             expose: true
             access_type: public_method

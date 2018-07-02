@@ -5,14 +5,16 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing LineAmountsNormalType
  *
- * Normál vagy gyűjtő számla esetén kitöltendő tétel érték adatokItem value data to be completed in case of normal or aggregate invoice
+ * Normál vagy gyűjtő számla esetén kitöltendő tétel érték adatokItem
+ * value data to be completed in case of normal or aggregate invoice
  * XSD Type: LineAmountsNormalType
  */
 class LineAmountsNormalType
 {
 
     /**
-     * Tétel nettó összege a számla pénznemébenNet amount of the item expressed in the currency of the invoice
+     * Tétel nettó összege a számla pénznemébenNet amount of the item expressed
+     * in the currency of the invoice
      *
      * @property float $lineNetAmount
      */
@@ -26,7 +28,8 @@ class LineAmountsNormalType
     private $lineVatRate = null;
 
     /**
-     * Tétel ÁFA összege a számla pénznemébenVAT amount of the item expressed in the currency of the invoice
+     * Tétel ÁFA összege a számla pénznemébenVAT amount of the item expressed in
+     * the currency of the invoice
      *
      * @property float $lineVatAmount
      */
@@ -40,7 +43,8 @@ class LineAmountsNormalType
     private $lineVatAmountHUF = null;
 
     /**
-     * Tétel bruttó értéke a számla pénznemébenGross amount of the item expressed in the currency of the invoice
+     * Tétel bruttó értéke a számla pénznemébenGross amount of the item
+     * expressed in the currency of the invoice
      *
      * @property float $lineGrossAmountNormal
      */
@@ -49,7 +53,8 @@ class LineAmountsNormalType
     /**
      * Gets as lineNetAmount
      *
-     * Tétel nettó összege a számla pénznemébenNet amount of the item expressed in the currency of the invoice
+     * Tétel nettó összege a számla pénznemébenNet amount of the item expressed
+     * in the currency of the invoice
      *
      * @return float
      */
@@ -61,7 +66,8 @@ class LineAmountsNormalType
     /**
      * Sets a new lineNetAmount
      *
-     * Tétel nettó összege a számla pénznemébenNet amount of the item expressed in the currency of the invoice
+     * Tétel nettó összege a számla pénznemébenNet amount of the item expressed
+     * in the currency of the invoice
      *
      * @param float $lineNetAmount
      * @return self
@@ -101,7 +107,8 @@ class LineAmountsNormalType
     /**
      * Gets as lineVatAmount
      *
-     * Tétel ÁFA összege a számla pénznemébenVAT amount of the item expressed in the currency of the invoice
+     * Tétel ÁFA összege a számla pénznemébenVAT amount of the item expressed in
+     * the currency of the invoice
      *
      * @return float
      */
@@ -113,7 +120,8 @@ class LineAmountsNormalType
     /**
      * Sets a new lineVatAmount
      *
-     * Tétel ÁFA összege a számla pénznemébenVAT amount of the item expressed in the currency of the invoice
+     * Tétel ÁFA összege a számla pénznemébenVAT amount of the item expressed in
+     * the currency of the invoice
      *
      * @param float $lineVatAmount
      * @return self
@@ -153,7 +161,8 @@ class LineAmountsNormalType
     /**
      * Gets as lineGrossAmountNormal
      *
-     * Tétel bruttó értéke a számla pénznemébenGross amount of the item expressed in the currency of the invoice
+     * Tétel bruttó értéke a számla pénznemébenGross amount of the item
+     * expressed in the currency of the invoice
      *
      * @return float
      */
@@ -165,7 +174,8 @@ class LineAmountsNormalType
     /**
      * Sets a new lineGrossAmountNormal
      *
-     * Tétel bruttó értéke a számla pénznemébenGross amount of the item expressed in the currency of the invoice
+     * Tétel bruttó értéke a számla pénznemébenGross amount of the item
+     * expressed in the currency of the invoice
      *
      * @param float $lineGrossAmountNormal
      * @return self

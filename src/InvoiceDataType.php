@@ -12,70 +12,86 @@ class InvoiceDataType
 {
 
     /**
-     * Számla vagy módosító okirat sorszáma - ÁFA tv. 169. § b) vagy 170. § (1) bek. b) pontSequential number of the original invoice or modifiation document - section 169 (b) or section 170 (1) b) of the VAT law
+     * Számla vagy módosító okirat sorszáma - ÁFA tv. 169. § b) vagy 170. § (1)
+     * bek. b) pontSequential number of the original invoice or modifiation document -
+     * section 169 (b) or section 170 (1) b) of the VAT law
      *
      * @property string $invoiceNumber
      */
     private $invoiceNumber = null;
 
     /**
-     * A számla típusa, módosító okirat esetén az eredeti számla típusaType of invoice. In case of modification document the type of original invoice
+     * A számla típusa, módosító okirat esetén az eredeti számla típusaType of
+     * invoice. In case of modification document the type of original invoice
      *
      * @property string $invoiceCategory
      */
     private $invoiceCategory = null;
 
     /**
-     * Számla kelte - ÁFA tv. 169. § a)Date of issue of the invoice - section 169 (a) of the VAT law
+     * Számla kelte - ÁFA tv. 169. § a)Date of issue of the invoice - section 169
+     * (a) of the VAT law
      *
      * @property \DateTime $invoiceIssueDate
      */
     private $invoiceIssueDate = null;
 
     /**
-     * Teljesítés dátuma (ha nem szerepel a számlán, akkor azonos a számla keltével) - ÁFA tv. 169. § g)Delivery date (if this field does not exist on the invoice, the date of the invoice should be considered as such) - section 169 (g) of the VAT law
+     * Teljesítés dátuma (ha nem szerepel a számlán, akkor azonos a számla
+     * keltével) - ÁFA tv. 169. § g)Delivery date (if this field does not exist on
+     * the invoice, the date of the invoice should be considered as such) - section 169
+     * (g) of the VAT law
      *
      * @property \DateTime $invoiceDeliveryDate
      */
     private $invoiceDeliveryDate = null;
 
     /**
-     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak első napjaThe first day of the delivery, if the invoice delivery is a period
+     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak első napjaThe
+     * first day of the delivery, if the invoice delivery is a period
      *
      * @property \DateTime $invoiceDeliveryPeriodStart
      */
     private $invoiceDeliveryPeriodStart = null;
 
     /**
-     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak utolsó napjaThe last day of the delivery, if the invoice delivery is a period
+     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak utolsó
+     * napjaThe last day of the delivery, if the invoice delivery is a period
      *
      * @property \DateTime $invoiceDeliveryPeriodEnd
      */
     private $invoiceDeliveryPeriodEnd = null;
 
     /**
-     * Számviteli teljesítés dátuma. Időszak esetén az időszak utolsó napjaDate of accounting accomplishment. In the event of a period, the last day of the period
+     * Számviteli teljesítés dátuma. Időszak esetén az időszak utolsó napjaDate
+     * of accounting accomplishment. In the event of a period, the last day of the
+     * period
      *
      * @property \DateTime $invoiceAccountingDeliveryDate
      */
     private $invoiceAccountingDeliveryDate = null;
 
     /**
-     * A számla pénzneme az ISO 4217 szabvány szerintISO 4217 currency code on the invoice
+     * A számla pénzneme az ISO 4217 szabvány szerintISO 4217 currency code on the
+     * invoice
      *
      * @property string $currencyCode
      */
     private $currencyCode = null;
 
     /**
-     * HUF-tól különböző pénznem esetén az alkalmazott árfolyam: egy egység értéke HUF-banIn case any currency is used other than HUF, the applied exchange rate should be mentioned: 1 unit of the foreign currency expressed in HUF
+     * HUF-tól különböző pénznem esetén az alkalmazott árfolyam: egy egység
+     * értéke HUF-banIn case any currency is used other than HUF, the applied
+     * exchange rate should be mentioned: 1 unit of the foreign currency expressed in
+     * HUF
      *
      * @property float $exchangeRate
      */
     private $exchangeRate = null;
 
     /**
-     * Önszámlázás jelölése (önszámlázás esetén true)Marking the fact of self-billing (in the case of self-billing the value is true)
+     * Önszámlázás jelölése (önszámlázás esetén true)Marking the fact of
+     * self-billing (in the case of self-billing the value is true)
      *
      * @property boolean $selfBillingIndicator
      */
@@ -96,21 +112,26 @@ class InvoiceDataType
     private $paymentDate = null;
 
     /**
-     * Pénzforgalmi elszámolás jelölése, ha az szerepel a számlán - ÁFA tv. 169. § h). Értéke true pénzforgalmi elszámolás eseténMarking the fact of cash accounting if this is indicated on the invoice - section 169 (h) of the VAT law. The value is true in case of cash accounting
+     * Pénzforgalmi elszámolás jelölése, ha az szerepel a számlán - ÁFA tv.
+     * 169. § h). Értéke true pénzforgalmi elszámolás eseténMarking the fact of
+     * cash accounting if this is indicated on the invoice - section 169 (h) of the VAT
+     * law. The value is true in case of cash accounting
      *
      * @property boolean $cashAccountingIndicator
      */
     private $cashAccountingIndicator = null;
 
     /**
-     * A számla vagy módosító okirat megjelenési formájaForm of appearance of the invoice or modification document
+     * A számla vagy módosító okirat megjelenési formájaForm of appearance of the
+     * invoice or modification document
      *
      * @property string $invoiceAppearance
      */
     private $invoiceAppearance = null;
 
     /**
-     * Elektronikus számla vagy módosító okirat állomány SHA256 lenyomataElectronic invoice or modification document file SHA256 hash value
+     * Elektronikus számla vagy módosító okirat állomány SHA256
+     * lenyomataElectronic invoice or modification document file SHA256 hash value
      *
      * @property string $electronicInvoiceHash
      */
@@ -121,14 +142,14 @@ class InvoiceDataType
      *
      * @property \Dream\NavInvoiceData\AdditionalDataType[] $additionalInvoiceData
      */
-    private $additionalInvoiceData = array(
-        
-    );
+    private $additionalInvoiceData = null;
 
     /**
      * Gets as invoiceNumber
      *
-     * Számla vagy módosító okirat sorszáma - ÁFA tv. 169. § b) vagy 170. § (1) bek. b) pontSequential number of the original invoice or modifiation document - section 169 (b) or section 170 (1) b) of the VAT law
+     * Számla vagy módosító okirat sorszáma - ÁFA tv. 169. § b) vagy 170. § (1)
+     * bek. b) pontSequential number of the original invoice or modifiation document -
+     * section 169 (b) or section 170 (1) b) of the VAT law
      *
      * @return string
      */
@@ -140,7 +161,9 @@ class InvoiceDataType
     /**
      * Sets a new invoiceNumber
      *
-     * Számla vagy módosító okirat sorszáma - ÁFA tv. 169. § b) vagy 170. § (1) bek. b) pontSequential number of the original invoice or modifiation document - section 169 (b) or section 170 (1) b) of the VAT law
+     * Számla vagy módosító okirat sorszáma - ÁFA tv. 169. § b) vagy 170. § (1)
+     * bek. b) pontSequential number of the original invoice or modifiation document -
+     * section 169 (b) or section 170 (1) b) of the VAT law
      *
      * @param string $invoiceNumber
      * @return self
@@ -154,7 +177,8 @@ class InvoiceDataType
     /**
      * Gets as invoiceCategory
      *
-     * A számla típusa, módosító okirat esetén az eredeti számla típusaType of invoice. In case of modification document the type of original invoice
+     * A számla típusa, módosító okirat esetén az eredeti számla típusaType of
+     * invoice. In case of modification document the type of original invoice
      *
      * @return string
      */
@@ -166,7 +190,8 @@ class InvoiceDataType
     /**
      * Sets a new invoiceCategory
      *
-     * A számla típusa, módosító okirat esetén az eredeti számla típusaType of invoice. In case of modification document the type of original invoice
+     * A számla típusa, módosító okirat esetén az eredeti számla típusaType of
+     * invoice. In case of modification document the type of original invoice
      *
      * @param string $invoiceCategory
      * @return self
@@ -180,7 +205,8 @@ class InvoiceDataType
     /**
      * Gets as invoiceIssueDate
      *
-     * Számla kelte - ÁFA tv. 169. § a)Date of issue of the invoice - section 169 (a) of the VAT law
+     * Számla kelte - ÁFA tv. 169. § a)Date of issue of the invoice - section 169
+     * (a) of the VAT law
      *
      * @return \DateTime
      */
@@ -192,7 +218,8 @@ class InvoiceDataType
     /**
      * Sets a new invoiceIssueDate
      *
-     * Számla kelte - ÁFA tv. 169. § a)Date of issue of the invoice - section 169 (a) of the VAT law
+     * Számla kelte - ÁFA tv. 169. § a)Date of issue of the invoice - section 169
+     * (a) of the VAT law
      *
      * @param \DateTime $invoiceIssueDate
      * @return self
@@ -206,7 +233,10 @@ class InvoiceDataType
     /**
      * Gets as invoiceDeliveryDate
      *
-     * Teljesítés dátuma (ha nem szerepel a számlán, akkor azonos a számla keltével) - ÁFA tv. 169. § g)Delivery date (if this field does not exist on the invoice, the date of the invoice should be considered as such) - section 169 (g) of the VAT law
+     * Teljesítés dátuma (ha nem szerepel a számlán, akkor azonos a számla
+     * keltével) - ÁFA tv. 169. § g)Delivery date (if this field does not exist on
+     * the invoice, the date of the invoice should be considered as such) - section 169
+     * (g) of the VAT law
      *
      * @return \DateTime
      */
@@ -218,7 +248,10 @@ class InvoiceDataType
     /**
      * Sets a new invoiceDeliveryDate
      *
-     * Teljesítés dátuma (ha nem szerepel a számlán, akkor azonos a számla keltével) - ÁFA tv. 169. § g)Delivery date (if this field does not exist on the invoice, the date of the invoice should be considered as such) - section 169 (g) of the VAT law
+     * Teljesítés dátuma (ha nem szerepel a számlán, akkor azonos a számla
+     * keltével) - ÁFA tv. 169. § g)Delivery date (if this field does not exist on
+     * the invoice, the date of the invoice should be considered as such) - section 169
+     * (g) of the VAT law
      *
      * @param \DateTime $invoiceDeliveryDate
      * @return self
@@ -232,7 +265,8 @@ class InvoiceDataType
     /**
      * Gets as invoiceDeliveryPeriodStart
      *
-     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak első napjaThe first day of the delivery, if the invoice delivery is a period
+     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak első napjaThe
+     * first day of the delivery, if the invoice delivery is a period
      *
      * @return \DateTime
      */
@@ -244,7 +278,8 @@ class InvoiceDataType
     /**
      * Sets a new invoiceDeliveryPeriodStart
      *
-     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak első napjaThe first day of the delivery, if the invoice delivery is a period
+     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak első napjaThe
+     * first day of the delivery, if the invoice delivery is a period
      *
      * @param \DateTime $invoiceDeliveryPeriodStart
      * @return self
@@ -258,7 +293,8 @@ class InvoiceDataType
     /**
      * Gets as invoiceDeliveryPeriodEnd
      *
-     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak utolsó napjaThe last day of the delivery, if the invoice delivery is a period
+     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak utolsó
+     * napjaThe last day of the delivery, if the invoice delivery is a period
      *
      * @return \DateTime
      */
@@ -270,7 +306,8 @@ class InvoiceDataType
     /**
      * Sets a new invoiceDeliveryPeriodEnd
      *
-     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak utolsó napjaThe last day of the delivery, if the invoice delivery is a period
+     * Amennyiben a számla egy időszakra vonatkozik, akkor az időszak utolsó
+     * napjaThe last day of the delivery, if the invoice delivery is a period
      *
      * @param \DateTime $invoiceDeliveryPeriodEnd
      * @return self
@@ -284,7 +321,9 @@ class InvoiceDataType
     /**
      * Gets as invoiceAccountingDeliveryDate
      *
-     * Számviteli teljesítés dátuma. Időszak esetén az időszak utolsó napjaDate of accounting accomplishment. In the event of a period, the last day of the period
+     * Számviteli teljesítés dátuma. Időszak esetén az időszak utolsó napjaDate
+     * of accounting accomplishment. In the event of a period, the last day of the
+     * period
      *
      * @return \DateTime
      */
@@ -296,7 +335,9 @@ class InvoiceDataType
     /**
      * Sets a new invoiceAccountingDeliveryDate
      *
-     * Számviteli teljesítés dátuma. Időszak esetén az időszak utolsó napjaDate of accounting accomplishment. In the event of a period, the last day of the period
+     * Számviteli teljesítés dátuma. Időszak esetén az időszak utolsó napjaDate
+     * of accounting accomplishment. In the event of a period, the last day of the
+     * period
      *
      * @param \DateTime $invoiceAccountingDeliveryDate
      * @return self
@@ -310,7 +351,8 @@ class InvoiceDataType
     /**
      * Gets as currencyCode
      *
-     * A számla pénzneme az ISO 4217 szabvány szerintISO 4217 currency code on the invoice
+     * A számla pénzneme az ISO 4217 szabvány szerintISO 4217 currency code on the
+     * invoice
      *
      * @return string
      */
@@ -322,7 +364,8 @@ class InvoiceDataType
     /**
      * Sets a new currencyCode
      *
-     * A számla pénzneme az ISO 4217 szabvány szerintISO 4217 currency code on the invoice
+     * A számla pénzneme az ISO 4217 szabvány szerintISO 4217 currency code on the
+     * invoice
      *
      * @param string $currencyCode
      * @return self
@@ -336,7 +379,10 @@ class InvoiceDataType
     /**
      * Gets as exchangeRate
      *
-     * HUF-tól különböző pénznem esetén az alkalmazott árfolyam: egy egység értéke HUF-banIn case any currency is used other than HUF, the applied exchange rate should be mentioned: 1 unit of the foreign currency expressed in HUF
+     * HUF-tól különböző pénznem esetén az alkalmazott árfolyam: egy egység
+     * értéke HUF-banIn case any currency is used other than HUF, the applied
+     * exchange rate should be mentioned: 1 unit of the foreign currency expressed in
+     * HUF
      *
      * @return float
      */
@@ -348,7 +394,10 @@ class InvoiceDataType
     /**
      * Sets a new exchangeRate
      *
-     * HUF-tól különböző pénznem esetén az alkalmazott árfolyam: egy egység értéke HUF-banIn case any currency is used other than HUF, the applied exchange rate should be mentioned: 1 unit of the foreign currency expressed in HUF
+     * HUF-tól különböző pénznem esetén az alkalmazott árfolyam: egy egység
+     * értéke HUF-banIn case any currency is used other than HUF, the applied
+     * exchange rate should be mentioned: 1 unit of the foreign currency expressed in
+     * HUF
      *
      * @param float $exchangeRate
      * @return self
@@ -362,7 +411,8 @@ class InvoiceDataType
     /**
      * Gets as selfBillingIndicator
      *
-     * Önszámlázás jelölése (önszámlázás esetén true)Marking the fact of self-billing (in the case of self-billing the value is true)
+     * Önszámlázás jelölése (önszámlázás esetén true)Marking the fact of
+     * self-billing (in the case of self-billing the value is true)
      *
      * @return boolean
      */
@@ -374,7 +424,8 @@ class InvoiceDataType
     /**
      * Sets a new selfBillingIndicator
      *
-     * Önszámlázás jelölése (önszámlázás esetén true)Marking the fact of self-billing (in the case of self-billing the value is true)
+     * Önszámlázás jelölése (önszámlázás esetén true)Marking the fact of
+     * self-billing (in the case of self-billing the value is true)
      *
      * @param boolean $selfBillingIndicator
      * @return self
@@ -440,7 +491,10 @@ class InvoiceDataType
     /**
      * Gets as cashAccountingIndicator
      *
-     * Pénzforgalmi elszámolás jelölése, ha az szerepel a számlán - ÁFA tv. 169. § h). Értéke true pénzforgalmi elszámolás eseténMarking the fact of cash accounting if this is indicated on the invoice - section 169 (h) of the VAT law. The value is true in case of cash accounting
+     * Pénzforgalmi elszámolás jelölése, ha az szerepel a számlán - ÁFA tv.
+     * 169. § h). Értéke true pénzforgalmi elszámolás eseténMarking the fact of
+     * cash accounting if this is indicated on the invoice - section 169 (h) of the VAT
+     * law. The value is true in case of cash accounting
      *
      * @return boolean
      */
@@ -452,7 +506,10 @@ class InvoiceDataType
     /**
      * Sets a new cashAccountingIndicator
      *
-     * Pénzforgalmi elszámolás jelölése, ha az szerepel a számlán - ÁFA tv. 169. § h). Értéke true pénzforgalmi elszámolás eseténMarking the fact of cash accounting if this is indicated on the invoice - section 169 (h) of the VAT law. The value is true in case of cash accounting
+     * Pénzforgalmi elszámolás jelölése, ha az szerepel a számlán - ÁFA tv.
+     * 169. § h). Értéke true pénzforgalmi elszámolás eseténMarking the fact of
+     * cash accounting if this is indicated on the invoice - section 169 (h) of the VAT
+     * law. The value is true in case of cash accounting
      *
      * @param boolean $cashAccountingIndicator
      * @return self
@@ -466,7 +523,8 @@ class InvoiceDataType
     /**
      * Gets as invoiceAppearance
      *
-     * A számla vagy módosító okirat megjelenési formájaForm of appearance of the invoice or modification document
+     * A számla vagy módosító okirat megjelenési formájaForm of appearance of the
+     * invoice or modification document
      *
      * @return string
      */
@@ -478,7 +536,8 @@ class InvoiceDataType
     /**
      * Sets a new invoiceAppearance
      *
-     * A számla vagy módosító okirat megjelenési formájaForm of appearance of the invoice or modification document
+     * A számla vagy módosító okirat megjelenési formájaForm of appearance of the
+     * invoice or modification document
      *
      * @param string $invoiceAppearance
      * @return self
@@ -492,7 +551,8 @@ class InvoiceDataType
     /**
      * Gets as electronicInvoiceHash
      *
-     * Elektronikus számla vagy módosító okirat állomány SHA256 lenyomataElectronic invoice or modification document file SHA256 hash value
+     * Elektronikus számla vagy módosító okirat állomány SHA256
+     * lenyomataElectronic invoice or modification document file SHA256 hash value
      *
      * @return string
      */
@@ -504,7 +564,8 @@ class InvoiceDataType
     /**
      * Sets a new electronicInvoiceHash
      *
-     * Elektronikus számla vagy módosító okirat állomány SHA256 lenyomataElectronic invoice or modification document file SHA256 hash value
+     * Elektronikus számla vagy módosító okirat állomány SHA256
+     * lenyomataElectronic invoice or modification document file SHA256 hash value
      *
      * @param string $electronicInvoiceHash
      * @return self

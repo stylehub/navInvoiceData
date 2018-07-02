@@ -12,14 +12,19 @@ class SupplierInfoType
 {
 
     /**
-     * Belföldi adószám, amely alatt a számlán szereplő termékértékesítés vagy szolgáltatás nyújtás történt. Lehet csoportazonosító szám isTax number or group identification number, under which the supply of goods or services is done
+     * Belföldi adószám, amely alatt a számlán szereplő termékértékesítés
+     * vagy szolgáltatás nyújtás történt. Lehet csoportazonosító szám isTax
+     * number or group identification number, under which the supply of goods or
+     * services is done
      *
      * @property \Dream\NavInvoiceData\TaxNumberType $supplierTaxNumber
      */
     private $supplierTaxNumber = null;
 
     /**
-     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás nyújtása csoportazonosító szám alatt történtTax number of group member, when the supply of goods or services is done under group identification number
+     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás nyújtása
+     * csoportazonosító szám alatt történtTax number of group member, when the
+     * supply of goods or services is done under group identification number
      *
      * @property \Dream\NavInvoiceData\TaxNumberType $groupMemberTaxNumber
      */
@@ -47,21 +52,25 @@ class SupplierInfoType
     private $supplierAddress = null;
 
     /**
-     * Az eladó (szállító) bankszámlaszámaBank account number of the seller (supplier)
+     * Az eladó (szállító) bankszámlaszámaBank account number of the seller
+     * (supplier)
      *
      * @property string $supplierBankAccountNumber
      */
     private $supplierBankAccountNumber = null;
 
     /**
-     * Értéke true, amennyiben az eladó (szállító) alanyi ÁFA mentesValue is true if the seller (supplier) is individually exempted from VAT
+     * Értéke true, amennyiben az eladó (szállító) alanyi ÁFA mentesValue is
+     * true if the seller (supplier) is individually exempted from VAT
      *
      * @property boolean $individualExemption
      */
     private $individualExemption = null;
 
     /**
-     * Az eladó adóraktári engedélyének vagy jövedéki engedélyének száma (2016. évi LXVIII. tv.)Number of supplier’s tax warehouse license or excise license (Act LXVIII of 2016)
+     * Az eladó adóraktári engedélyének vagy jövedéki engedélyének száma
+     * (2016. évi LXVIII. tv.)Number of supplier’s tax warehouse license or excise
+     * license (Act LXVIII of 2016)
      *
      * @property string $exciseLicenceNum
      */
@@ -70,7 +79,10 @@ class SupplierInfoType
     /**
      * Gets as supplierTaxNumber
      *
-     * Belföldi adószám, amely alatt a számlán szereplő termékértékesítés vagy szolgáltatás nyújtás történt. Lehet csoportazonosító szám isTax number or group identification number, under which the supply of goods or services is done
+     * Belföldi adószám, amely alatt a számlán szereplő termékértékesítés
+     * vagy szolgáltatás nyújtás történt. Lehet csoportazonosító szám isTax
+     * number or group identification number, under which the supply of goods or
+     * services is done
      *
      * @return \Dream\NavInvoiceData\TaxNumberType
      */
@@ -82,7 +94,10 @@ class SupplierInfoType
     /**
      * Sets a new supplierTaxNumber
      *
-     * Belföldi adószám, amely alatt a számlán szereplő termékértékesítés vagy szolgáltatás nyújtás történt. Lehet csoportazonosító szám isTax number or group identification number, under which the supply of goods or services is done
+     * Belföldi adószám, amely alatt a számlán szereplő termékértékesítés
+     * vagy szolgáltatás nyújtás történt. Lehet csoportazonosító szám isTax
+     * number or group identification number, under which the supply of goods or
+     * services is done
      *
      * @param \Dream\NavInvoiceData\TaxNumberType $supplierTaxNumber
      * @return self
@@ -96,7 +111,9 @@ class SupplierInfoType
     /**
      * Gets as groupMemberTaxNumber
      *
-     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás nyújtása csoportazonosító szám alatt történtTax number of group member, when the supply of goods or services is done under group identification number
+     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás nyújtása
+     * csoportazonosító szám alatt történtTax number of group member, when the
+     * supply of goods or services is done under group identification number
      *
      * @return \Dream\NavInvoiceData\TaxNumberType
      */
@@ -108,7 +125,9 @@ class SupplierInfoType
     /**
      * Sets a new groupMemberTaxNumber
      *
-     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás nyújtása csoportazonosító szám alatt történtTax number of group member, when the supply of goods or services is done under group identification number
+     * Csoport tag adószáma, ha a termékbeszerzés vagy szolgáltatás nyújtása
+     * csoportazonosító szám alatt történtTax number of group member, when the
+     * supply of goods or services is done under group identification number
      *
      * @param \Dream\NavInvoiceData\TaxNumberType $groupMemberTaxNumber
      * @return self
@@ -200,7 +219,8 @@ class SupplierInfoType
     /**
      * Gets as supplierBankAccountNumber
      *
-     * Az eladó (szállító) bankszámlaszámaBank account number of the seller (supplier)
+     * Az eladó (szállító) bankszámlaszámaBank account number of the seller
+     * (supplier)
      *
      * @return string
      */
@@ -212,7 +232,8 @@ class SupplierInfoType
     /**
      * Sets a new supplierBankAccountNumber
      *
-     * Az eladó (szállító) bankszámlaszámaBank account number of the seller (supplier)
+     * Az eladó (szállító) bankszámlaszámaBank account number of the seller
+     * (supplier)
      *
      * @param string $supplierBankAccountNumber
      * @return self
@@ -226,7 +247,8 @@ class SupplierInfoType
     /**
      * Gets as individualExemption
      *
-     * Értéke true, amennyiben az eladó (szállító) alanyi ÁFA mentesValue is true if the seller (supplier) is individually exempted from VAT
+     * Értéke true, amennyiben az eladó (szállító) alanyi ÁFA mentesValue is
+     * true if the seller (supplier) is individually exempted from VAT
      *
      * @return boolean
      */
@@ -238,7 +260,8 @@ class SupplierInfoType
     /**
      * Sets a new individualExemption
      *
-     * Értéke true, amennyiben az eladó (szállító) alanyi ÁFA mentesValue is true if the seller (supplier) is individually exempted from VAT
+     * Értéke true, amennyiben az eladó (szállító) alanyi ÁFA mentesValue is
+     * true if the seller (supplier) is individually exempted from VAT
      *
      * @param boolean $individualExemption
      * @return self
@@ -252,7 +275,9 @@ class SupplierInfoType
     /**
      * Gets as exciseLicenceNum
      *
-     * Az eladó adóraktári engedélyének vagy jövedéki engedélyének száma (2016. évi LXVIII. tv.)Number of supplier’s tax warehouse license or excise license (Act LXVIII of 2016)
+     * Az eladó adóraktári engedélyének vagy jövedéki engedélyének száma
+     * (2016. évi LXVIII. tv.)Number of supplier’s tax warehouse license or excise
+     * license (Act LXVIII of 2016)
      *
      * @return string
      */
@@ -264,7 +289,9 @@ class SupplierInfoType
     /**
      * Sets a new exciseLicenceNum
      *
-     * Az eladó adóraktári engedélyének vagy jövedéki engedélyének száma (2016. évi LXVIII. tv.)Number of supplier’s tax warehouse license or excise license (Act LXVIII of 2016)
+     * Az eladó adóraktári engedélyének vagy jövedéki engedélyének száma
+     * (2016. évi LXVIII. tv.)Number of supplier’s tax warehouse license or excise
+     * license (Act LXVIII of 2016)
      *
      * @param string $exciseLicenceNum
      * @return self

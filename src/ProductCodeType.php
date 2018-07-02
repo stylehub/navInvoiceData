@@ -5,21 +5,24 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing ProductCodeType
  *
- * Különböző termék- vagy szolgáltatáskódokat tartalmazó típusField type including the different product and service codes
+ * Különböző termék- vagy szolgáltatáskódokat tartalmazó típusField type
+ * including the different product and service codes
  * XSD Type: ProductCodeType
  */
 class ProductCodeType
 {
 
     /**
-     * A termékkód fajtájának (pl. VTSZ, CsK, stb.) jelöléseThe kind of product code (f. ex. VTSZ, CsK, etc.)
+     * A termékkód fajtájának (pl. VTSZ, CsK, stb.) jelöléseThe kind of product
+     * code (f. ex. VTSZ, CsK, etc.)
      *
      * @property string $productCodeCategory
      */
     private $productCodeCategory = null;
 
     /**
-     * A termékkód értéke nem saját termékkód eseténThe value of (not own) product code
+     * A termékkód értéke nem saját termékkód eseténThe value of (not own)
+     * product code
      *
      * @property string $productCodeValue
      */
@@ -35,7 +38,8 @@ class ProductCodeType
     /**
      * Gets as productCodeCategory
      *
-     * A termékkód fajtájának (pl. VTSZ, CsK, stb.) jelöléseThe kind of product code (f. ex. VTSZ, CsK, etc.)
+     * A termékkód fajtájának (pl. VTSZ, CsK, stb.) jelöléseThe kind of product
+     * code (f. ex. VTSZ, CsK, etc.)
      *
      * @return string
      */
@@ -47,7 +51,8 @@ class ProductCodeType
     /**
      * Sets a new productCodeCategory
      *
-     * A termékkód fajtájának (pl. VTSZ, CsK, stb.) jelöléseThe kind of product code (f. ex. VTSZ, CsK, etc.)
+     * A termékkód fajtájának (pl. VTSZ, CsK, stb.) jelöléseThe kind of product
+     * code (f. ex. VTSZ, CsK, etc.)
      *
      * @param string $productCodeCategory
      * @return self
@@ -61,7 +66,8 @@ class ProductCodeType
     /**
      * Gets as productCodeValue
      *
-     * A termékkód értéke nem saját termékkód eseténThe value of (not own) product code
+     * A termékkód értéke nem saját termékkód eseténThe value of (not own)
+     * product code
      *
      * @return string
      */
@@ -73,7 +79,8 @@ class ProductCodeType
     /**
      * Sets a new productCodeValue
      *
-     * A termékkód értéke nem saját termékkód eseténThe value of (not own) product code
+     * A termékkód értéke nem saját termékkód eseténThe value of (not own)
+     * product code
      *
      * @param string $productCodeValue
      * @return self

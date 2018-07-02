@@ -12,35 +12,44 @@ class SummaryByVatRateType
 {
 
     /**
-     * Adómérték vagy adómentesség jelöléseMarking the tax rate or the fact of tax exemption
+     * Adómérték vagy adómentesség jelöléseMarking the tax rate or the fact of
+     * tax exemption
      *
      * @property \Dream\NavInvoiceData\VatRateType $vatRate
      */
     private $vatRate = null;
 
     /**
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás nettó összege a számla pénznemébenNet amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * nettó összege a számla pénznemébenNet amount of sales or service delivery
+     * under a given tax rate expressed in the currency of the invoice
      *
      * @property float $vatRateNetAmount
      */
     private $vatRateNetAmount = null;
 
     /**
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás ÁFA összege a számla pénznemébenVAT amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * ÁFA összege a számla pénznemébenVAT amount of sales or service delivery
+     * under a given tax rate expressed in the currency of the invoice
      *
      * @property float $vatRateVatAmount
      */
     private $vatRateVatAmount = null;
 
     /**
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás ÁFA összege forintbanVAT amount of sales or service delivery under a given tax rate expressed in HUF
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * ÁFA összege forintbanVAT amount of sales or service delivery under a given tax
+     * rate expressed in HUF
      *
      * @property float $vatRateVatAmountHUF
      */
     private $vatRateVatAmountHUF = null;
 
     /**
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás bruttó összege a számla pénznemébenGross amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * bruttó összege a számla pénznemébenGross amount of sales or service
+     * delivery under a given tax rate expressed in the currency of the invoice
      *
      * @property float $vatRateGrossAmount
      */
@@ -49,7 +58,8 @@ class SummaryByVatRateType
     /**
      * Gets as vatRate
      *
-     * Adómérték vagy adómentesség jelöléseMarking the tax rate or the fact of tax exemption
+     * Adómérték vagy adómentesség jelöléseMarking the tax rate or the fact of
+     * tax exemption
      *
      * @return \Dream\NavInvoiceData\VatRateType
      */
@@ -61,7 +71,8 @@ class SummaryByVatRateType
     /**
      * Sets a new vatRate
      *
-     * Adómérték vagy adómentesség jelöléseMarking the tax rate or the fact of tax exemption
+     * Adómérték vagy adómentesség jelöléseMarking the tax rate or the fact of
+     * tax exemption
      *
      * @param \Dream\NavInvoiceData\VatRateType $vatRate
      * @return self
@@ -75,7 +86,9 @@ class SummaryByVatRateType
     /**
      * Gets as vatRateNetAmount
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás nettó összege a számla pénznemébenNet amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * nettó összege a számla pénznemébenNet amount of sales or service delivery
+     * under a given tax rate expressed in the currency of the invoice
      *
      * @return float
      */
@@ -87,7 +100,9 @@ class SummaryByVatRateType
     /**
      * Sets a new vatRateNetAmount
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás nettó összege a számla pénznemébenNet amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * nettó összege a számla pénznemébenNet amount of sales or service delivery
+     * under a given tax rate expressed in the currency of the invoice
      *
      * @param float $vatRateNetAmount
      * @return self
@@ -101,7 +116,9 @@ class SummaryByVatRateType
     /**
      * Gets as vatRateVatAmount
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás ÁFA összege a számla pénznemébenVAT amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * ÁFA összege a számla pénznemébenVAT amount of sales or service delivery
+     * under a given tax rate expressed in the currency of the invoice
      *
      * @return float
      */
@@ -113,7 +130,9 @@ class SummaryByVatRateType
     /**
      * Sets a new vatRateVatAmount
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás ÁFA összege a számla pénznemébenVAT amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * ÁFA összege a számla pénznemébenVAT amount of sales or service delivery
+     * under a given tax rate expressed in the currency of the invoice
      *
      * @param float $vatRateVatAmount
      * @return self
@@ -127,7 +146,9 @@ class SummaryByVatRateType
     /**
      * Gets as vatRateVatAmountHUF
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás ÁFA összege forintbanVAT amount of sales or service delivery under a given tax rate expressed in HUF
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * ÁFA összege forintbanVAT amount of sales or service delivery under a given tax
+     * rate expressed in HUF
      *
      * @return float
      */
@@ -139,7 +160,9 @@ class SummaryByVatRateType
     /**
      * Sets a new vatRateVatAmountHUF
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás ÁFA összege forintbanVAT amount of sales or service delivery under a given tax rate expressed in HUF
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * ÁFA összege forintbanVAT amount of sales or service delivery under a given tax
+     * rate expressed in HUF
      *
      * @param float $vatRateVatAmountHUF
      * @return self
@@ -153,7 +176,9 @@ class SummaryByVatRateType
     /**
      * Gets as vatRateGrossAmount
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás bruttó összege a számla pénznemébenGross amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * bruttó összege a számla pénznemébenGross amount of sales or service
+     * delivery under a given tax rate expressed in the currency of the invoice
      *
      * @return float
      */
@@ -165,7 +190,9 @@ class SummaryByVatRateType
     /**
      * Sets a new vatRateGrossAmount
      *
-     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás bruttó összege a számla pénznemébenGross amount of sales or service delivery under a given tax rate expressed in the currency of the invoice
+     * Az adott adómértékhez tartozó értékesítés vagy szolgáltatásnyújtás
+     * bruttó összege a számla pénznemébenGross amount of sales or service
+     * delivery under a given tax rate expressed in the currency of the invoice
      *
      * @param float $vatRateGrossAmount
      * @return self

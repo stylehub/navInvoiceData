@@ -19,7 +19,9 @@ class VesselType
     private $length = null;
 
     /**
-     * Értéke true, ha a jármű az ÁFA tv. 259.§ 25. b) szerinti kivétel alá tartozikThe value is true if the means of transport is exempt from VAT as per section 259 [25] (b)
+     * Értéke true, ha a jármű az ÁFA tv. 259.§ 25. b) szerinti kivétel alá
+     * tartozikThe value is true if the means of transport is exempt from VAT as per
+     * section 259 [25] (b)
      *
      * @property boolean $activityReferred
      */
@@ -61,7 +63,9 @@ class VesselType
     /**
      * Gets as activityReferred
      *
-     * Értéke true, ha a jármű az ÁFA tv. 259.§ 25. b) szerinti kivétel alá tartozikThe value is true if the means of transport is exempt from VAT as per section 259 [25] (b)
+     * Értéke true, ha a jármű az ÁFA tv. 259.§ 25. b) szerinti kivétel alá
+     * tartozikThe value is true if the means of transport is exempt from VAT as per
+     * section 259 [25] (b)
      *
      * @return boolean
      */
@@ -73,7 +77,9 @@ class VesselType
     /**
      * Sets a new activityReferred
      *
-     * Értéke true, ha a jármű az ÁFA tv. 259.§ 25. b) szerinti kivétel alá tartozikThe value is true if the means of transport is exempt from VAT as per section 259 [25] (b)
+     * Értéke true, ha a jármű az ÁFA tv. 259.§ 25. b) szerinti kivétel alá
+     * tartozikThe value is true if the means of transport is exempt from VAT as per
+     * section 259 [25] (b)
      *
      * @param boolean $activityReferred
      * @return self

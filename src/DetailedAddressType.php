@@ -19,14 +19,17 @@ class DetailedAddressType
     private $countryCode = null;
 
     /**
-     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2 alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a given country)
+     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2
+     * alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a
+     * given country)
      *
      * @property string $region
      */
     private $region = null;
 
     /**
-     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
+     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell
+     * kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
      *
      * @property string $postalCode
      */
@@ -124,7 +127,9 @@ class DetailedAddressType
     /**
      * Gets as region
      *
-     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2 alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a given country)
+     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2
+     * alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a
+     * given country)
      *
      * @return string
      */
@@ -136,7 +141,9 @@ class DetailedAddressType
     /**
      * Sets a new region
      *
-     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2 alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a given country)
+     * Tartomány kódja (amennyiben értelmezhető az adott országban) az ISO 3166-2
+     * alpha 2 szabvány szerintISO 3166 alpha-2 province code (if appropriate in a
+     * given country)
      *
      * @param string $region
      * @return self
@@ -150,7 +157,8 @@ class DetailedAddressType
     /**
      * Gets as postalCode
      *
-     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
+     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell
+     * kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
      *
      * @return string
      */
@@ -162,7 +170,8 @@ class DetailedAddressType
     /**
      * Sets a new postalCode
      *
-     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
+     * Irányítószám (amennyiben nem értelmezhető, 0000 értékkel kell
+     * kitölteni)ZIP code (If can not be interpreted, need to be filled "0000")
      *
      * @param string $postalCode
      * @return self

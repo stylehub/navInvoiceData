@@ -19,7 +19,7 @@ Dream\NavInvoiceData\PaymentEvidenceDocumentDataType:
             accessor:
                 getter: getEvidenceDocumentDate
                 setter: setEvidenceDocumentDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         obligatedName:
             expose: true
             access_type: public_method

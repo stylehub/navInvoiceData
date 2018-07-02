@@ -19,4 +19,4 @@ Dream\NavInvoiceData\AggregateInvoiceLineDataType:
             accessor:
                 getter: getLineDeliveryDate
                 setter: setLineDeliveryDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'

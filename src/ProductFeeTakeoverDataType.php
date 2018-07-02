@@ -5,21 +5,26 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing ProductFeeTakeoverDataType
  *
- * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos adatokData in connection with takeover of environmental protection product fee
+ * A környezetvédelmi termékdíj kötelezettség átvállalásával kapcsolatos
+ * adatokData in connection with takeover of environmental protection product fee
  * XSD Type: ProductFeeTakeoverDataType
  */
 class ProductFeeTakeoverDataType
 {
 
     /**
-     * Az átvállalás iránya és jogszabályi alapjaDirection and legal base of takeover
+     * Az átvállalás iránya és jogszabályi alapjaDirection and legal base of
+     * takeover
      *
      * @property string $takeoverReason
      */
     private $takeoverReason = null;
 
     /**
-     * Az átvállalt termékdíj összege forintban, ha a vevő vállalja át az eladó termékdíj-kötelezettségétAmount in Hungarian forints of the product fee taken over if the purchaser takes over the supplier’s product fee liability
+     * Az átvállalt termékdíj összege forintban, ha a vevő vállalja át az
+     * eladó termékdíj-kötelezettségétAmount in Hungarian forints of the product
+     * fee taken over if the purchaser takes over the supplier’s product fee
+     * liability
      *
      * @property float $takeoverAmount
      */
@@ -28,7 +33,8 @@ class ProductFeeTakeoverDataType
     /**
      * Gets as takeoverReason
      *
-     * Az átvállalás iránya és jogszabályi alapjaDirection and legal base of takeover
+     * Az átvállalás iránya és jogszabályi alapjaDirection and legal base of
+     * takeover
      *
      * @return string
      */
@@ -40,7 +46,8 @@ class ProductFeeTakeoverDataType
     /**
      * Sets a new takeoverReason
      *
-     * Az átvállalás iránya és jogszabályi alapjaDirection and legal base of takeover
+     * Az átvállalás iránya és jogszabályi alapjaDirection and legal base of
+     * takeover
      *
      * @param string $takeoverReason
      * @return self
@@ -54,7 +61,10 @@ class ProductFeeTakeoverDataType
     /**
      * Gets as takeoverAmount
      *
-     * Az átvállalt termékdíj összege forintban, ha a vevő vállalja át az eladó termékdíj-kötelezettségétAmount in Hungarian forints of the product fee taken over if the purchaser takes over the supplier’s product fee liability
+     * Az átvállalt termékdíj összege forintban, ha a vevő vállalja át az
+     * eladó termékdíj-kötelezettségétAmount in Hungarian forints of the product
+     * fee taken over if the purchaser takes over the supplier’s product fee
+     * liability
      *
      * @return float
      */
@@ -66,7 +76,10 @@ class ProductFeeTakeoverDataType
     /**
      * Sets a new takeoverAmount
      *
-     * Az átvállalt termékdíj összege forintban, ha a vevő vállalja át az eladó termékdíj-kötelezettségétAmount in Hungarian forints of the product fee taken over if the purchaser takes over the supplier’s product fee liability
+     * Az átvállalt termékdíj összege forintban, ha a vevő vállalja át az
+     * eladó termékdíj-kötelezettségétAmount in Hungarian forints of the product
+     * fee taken over if the purchaser takes over the supplier’s product fee
+     * liability
      *
      * @param float $takeoverAmount
      * @return self

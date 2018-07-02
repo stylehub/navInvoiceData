@@ -5,7 +5,8 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing AdditionalDataType
  *
- * További adat leírására szolgáló típusType for additional data description
+ * További adat leírására szolgáló típusType for additional data
+ * description
  * XSD Type: AdditionalDataType
  */
 class AdditionalDataType
@@ -19,7 +20,8 @@ class AdditionalDataType
     private $dataName = null;
 
     /**
-     * Az adatmező tartalmának szöveges leírásaDescription of content of the data field
+     * Az adatmező tartalmának szöveges leírásaDescription of content of the data
+     * field
      *
      * @property string $dataDescription
      */
@@ -61,7 +63,8 @@ class AdditionalDataType
     /**
      * Gets as dataDescription
      *
-     * Az adatmező tartalmának szöveges leírásaDescription of content of the data field
+     * Az adatmező tartalmának szöveges leírásaDescription of content of the data
+     * field
      *
      * @return string
      */
@@ -73,7 +76,8 @@ class AdditionalDataType
     /**
      * Sets a new dataDescription
      *
-     * Az adatmező tartalmának szöveges leírásaDescription of content of the data field
+     * Az adatmező tartalmának szöveges leírásaDescription of content of the data
+     * field
      *
      * @param string $dataDescription
      * @return self

@@ -5,7 +5,8 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing LineType
  *
- * A számla tételek (termék vagy szolgáltatás) adatait tartalmazó típusField type including data of invoice items (product or service)
+ * A számla tételek (termék vagy szolgáltatás) adatait tartalmazó típusField
+ * type including data of invoice items (product or service)
  * XSD Type: LineType
  */
 class LineType
@@ -19,21 +20,26 @@ class LineType
     private $lineNumber = null;
 
     /**
-     * Módosításról történő adatszolgáltatás esetén a tételsor módosítás jellegének jelöléseMarking the goal of modification of the line (in the case of data supply about changes/updates only)
+     * Módosításról történő adatszolgáltatás esetén a tételsor módosítás
+     * jellegének jelöléseMarking the goal of modification of the line (in the case
+     * of data supply about changes/updates only)
      *
-     * @property \Dream\NavInvoiceData\LineModificationReferenceType $lineModificationReference
+     * @property \Dream\NavInvoiceData\LineModificationReferenceType
+     * $lineModificationReference
      */
     private $lineModificationReference = null;
 
     /**
-     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján szükségesReferences to connected items if it is necessary according to VAT law
+     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján
+     * szükségesReferences to connected items if it is necessary according to VAT law
      *
      * @property integer[] $referencesToOtherLines
      */
     private $referencesToOtherLines = null;
 
     /**
-     * Értéke true, ha a számla tétel előleg jellegűThe value is true if the invoice item is a kind of advance charge
+     * Értéke true, ha a számla tétel előleg jellegűThe value is true if the
+     * invoice item is a kind of advance charge
      *
      * @property boolean $advanceIndicator
      */
@@ -47,7 +53,8 @@ class LineType
     private $productCodes = null;
 
     /**
-     * A termék vagy szolgáltatás megnevezéseName / description of the product or service
+     * A termék vagy szolgáltatás megnevezéseName / description of the product or
+     * service
      *
      * @property string $lineDescription
      */
@@ -68,7 +75,10 @@ class LineType
     private $unitOfMeasure = null;
 
     /**
-     * Egységár a számla pénznemében. Egyszerűsített számla esetén bruttó, egyéb esetben nettó egységárUnit price expressed in the currency of the invoice In the event of simplified invoices gross unit price, in other cases net unit price
+     * Egységár a számla pénznemében. Egyszerűsített számla esetén bruttó,
+     * egyéb esetben nettó egységárUnit price expressed in the currency of the
+     * invoice In the event of simplified invoices gross unit price, in other cases net
+     * unit price
      *
      * @property float $unitPrice
      */
@@ -82,21 +92,26 @@ class LineType
     private $lineDiscountData = null;
 
     /**
-     * Normál (nem egyszerűsített) számla esetén (beleértve a gyűjtőszámlát) kitöltendő tétel érték adatok.Item value data to be completed in case of normal (not simplified, but including aggregated) invoice
+     * Normál (nem egyszerűsített) számla esetén (beleértve a gyűjtőszámlát)
+     * kitöltendő tétel érték adatok.Item value data to be completed in case of
+     * normal (not simplified, but including aggregated) invoice
      *
      * @property \Dream\NavInvoiceData\LineAmountsNormalType $lineAmountsNormal
      */
     private $lineAmountsNormal = null;
 
     /**
-     * Egyszerűsített számla esetén kitöltendő tétel érték adatokItem value data to be completed in case of simplified invoice
+     * Egyszerűsített számla esetén kitöltendő tétel érték adatokItem value
+     * data to be completed in case of simplified invoice
      *
      * @property \Dream\NavInvoiceData\LineAmountsSimplifiedType $lineAmountsSimplified
      */
     private $lineAmountsSimplified = null;
 
     /**
-     * Értéke true ha a tétel közvetített szolgáltatás - Számviteli tv. 3.§ (4) 1The value is true if the item is an intermediated service - paragraph (4) 1 of the Article 3 of Accounting Act
+     * Értéke true ha a tétel közvetített szolgáltatás - Számviteli tv. 3.§
+     * (4) 1The value is true if the item is an intermediated service - paragraph (4) 1
+     * of the Article 3 of Accounting Act
      *
      * @property boolean $intermediatedService
      */
@@ -105,26 +120,30 @@ class LineType
     /**
      * Gyűjtő számla adatokAggregate invoice data
      *
-     * @property \Dream\NavInvoiceData\AggregateInvoiceLineDataType $aggregateInvoiceLineData
+     * @property \Dream\NavInvoiceData\AggregateInvoiceLineDataType
+     * $aggregateInvoiceLineData
      */
     private $aggregateInvoiceLineData = null;
 
     /**
-     * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of new means of transport - section 89 § and 169 (o) of the VAT law
+     * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of
+     * new means of transport - section 89 § and 169 (o) of the VAT law
      *
      * @property \Dream\NavInvoiceData\NewTransportMeanType $newTransportMean
      */
     private $newTransportMean = null;
 
     /**
-     * Értéke true, ha a tétel betétdíj jellegűThe value is true if the item is bottle/container deposit
+     * Értéke true, ha a tétel betétdíj jellegűThe value is true if the item is
+     * bottle/container deposit
      *
      * @property boolean $depositIndicator
      */
     private $depositIndicator = null;
 
     /**
-     * Különbözet szerinti szabályozás jelölése - ÁFA tv. 169. § p) q)Marking the margin-scheme taxation as per section 169 (p)(q)
+     * Különbözet szerinti szabályozás jelölése - ÁFA tv. 169. § p) q)Marking
+     * the margin-scheme taxation as per section 169 (p)(q)
      *
      * @property string $marginSchemeIndicator
      */
@@ -138,57 +157,65 @@ class LineType
     private $ekaerIds = null;
 
     /**
-     * Értéke true ha a tételt termékdíj fizetési kötelezettség terheliThe value is true if the item is liable to product fee
+     * Értéke true ha a tételt termékdíj fizetési kötelezettség terheliThe
+     * value is true if the item is liable to product fee
      *
      * @property boolean $obligatedForProductFee
      */
     private $obligatedForProductFee = null;
 
     /**
-     * Földgáz, villamos energia, szén jövedéki adója forintban - Jöt. 118. § (2)Excise duty on natural gas, electricity and coal in Hungarian forints – paragraph (2), Section 118 of the Act on Excise Duties
+     * Földgáz, villamos energia, szén jövedéki adója forintban - Jöt. 118. §
+     * (2)Excise duty on natural gas, electricity and coal in Hungarian forints –
+     * paragraph (2), Section 118 of the Act on Excise Duties
      *
      * @property float $gPCExcise
      */
     private $gPCExcise = null;
 
     /**
-     * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a), paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
+     * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM
+     * rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a),
+     * paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
      *
      * @property \Dream\NavInvoiceData\DieselOilPurchaseType $dieselOilPurchase
      */
     private $dieselOilPurchase = null;
 
     /**
-     * Értéke true, ha a Neta tv-ben meghatározott adókötelezettség az adó alanyát terheli. 2011. évi CIII. tv. 3.§(2)Value is true, if the taxable person is liable for tax obligation determined in the Act on Public Health Product Tax (Neta tv.). Paragraph (2), Section 3 of the Act CIII of 2011
+     * Értéke true, ha a Neta tv-ben meghatározott adókötelezettség az adó
+     * alanyát terheli. 2011. évi CIII. tv. 3.§(2)Value is true, if the taxable
+     * person is liable for tax obligation determined in the Act on Public Health
+     * Product Tax (Neta tv.). Paragraph (2), Section 3 of the Act CIII of 2011
      *
      * @property boolean $netaDeclaration
      */
     private $netaDeclaration = null;
 
     /**
-     * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti, tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on Environmental Protection Product Fee (related to the item)
+     * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti,
+     * tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on
+     * Environmental Protection Product Fee (related to the item)
      *
      * @property \Dream\NavInvoiceData\ProductFeeClauseType $productFeeClause
      */
     private $productFeeClause = null;
 
     /**
-     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the line's product charge
+     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the
+     * line's product charge
      *
      * @property \Dream\NavInvoiceData\ProductFeeDataType[] $lineProductFeeContent
      */
-    private $lineProductFeeContent = array(
-        
-    );
+    private $lineProductFeeContent = null;
 
     /**
-     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in relation to the product / service item
+     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in
+     * relation to the product / service item
      *
      * @property \Dream\NavInvoiceData\AdditionalDataType[] $additionalLineData
      */
-    private $additionalLineData = array(
-        
-    );
+    private $additionalLineData = null;
 
     /**
      * Gets as lineNumber
@@ -219,7 +246,9 @@ class LineType
     /**
      * Gets as lineModificationReference
      *
-     * Módosításról történő adatszolgáltatás esetén a tételsor módosítás jellegének jelöléseMarking the goal of modification of the line (in the case of data supply about changes/updates only)
+     * Módosításról történő adatszolgáltatás esetén a tételsor módosítás
+     * jellegének jelöléseMarking the goal of modification of the line (in the case
+     * of data supply about changes/updates only)
      *
      * @return \Dream\NavInvoiceData\LineModificationReferenceType
      */
@@ -231,9 +260,12 @@ class LineType
     /**
      * Sets a new lineModificationReference
      *
-     * Módosításról történő adatszolgáltatás esetén a tételsor módosítás jellegének jelöléseMarking the goal of modification of the line (in the case of data supply about changes/updates only)
+     * Módosításról történő adatszolgáltatás esetén a tételsor módosítás
+     * jellegének jelöléseMarking the goal of modification of the line (in the case
+     * of data supply about changes/updates only)
      *
-     * @param \Dream\NavInvoiceData\LineModificationReferenceType $lineModificationReference
+     * @param \Dream\NavInvoiceData\LineModificationReferenceType
+     * $lineModificationReference
      * @return self
      */
     public function setLineModificationReference(\Dream\NavInvoiceData\LineModificationReferenceType $lineModificationReference)
@@ -245,7 +277,8 @@ class LineType
     /**
      * Adds as referenceToOtherLine
      *
-     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján szükségesReferences to connected items if it is necessary according to VAT law
+     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján
+     * szükségesReferences to connected items if it is necessary according to VAT law
      *
      * @return self
      * @param integer $referenceToOtherLine
@@ -259,7 +292,8 @@ class LineType
     /**
      * isset referencesToOtherLines
      *
-     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján szükségesReferences to connected items if it is necessary according to VAT law
+     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján
+     * szükségesReferences to connected items if it is necessary according to VAT law
      *
      * @param scalar $index
      * @return boolean
@@ -272,7 +306,8 @@ class LineType
     /**
      * unset referencesToOtherLines
      *
-     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján szükségesReferences to connected items if it is necessary according to VAT law
+     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján
+     * szükségesReferences to connected items if it is necessary according to VAT law
      *
      * @param scalar $index
      * @return void
@@ -285,7 +320,8 @@ class LineType
     /**
      * Gets as referencesToOtherLines
      *
-     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján szükségesReferences to connected items if it is necessary according to VAT law
+     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján
+     * szükségesReferences to connected items if it is necessary according to VAT law
      *
      * @return integer[]
      */
@@ -297,7 +333,8 @@ class LineType
     /**
      * Sets a new referencesToOtherLines
      *
-     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján szükségesReferences to connected items if it is necessary according to VAT law
+     * Hivatkozások kapcsolódó tételekre, ha ez az ÁFA törvény alapján
+     * szükségesReferences to connected items if it is necessary according to VAT law
      *
      * @param integer $referencesToOtherLines
      * @return self
@@ -311,7 +348,8 @@ class LineType
     /**
      * Gets as advanceIndicator
      *
-     * Értéke true, ha a számla tétel előleg jellegűThe value is true if the invoice item is a kind of advance charge
+     * Értéke true, ha a számla tétel előleg jellegűThe value is true if the
+     * invoice item is a kind of advance charge
      *
      * @return boolean
      */
@@ -323,7 +361,8 @@ class LineType
     /**
      * Sets a new advanceIndicator
      *
-     * Értéke true, ha a számla tétel előleg jellegűThe value is true if the invoice item is a kind of advance charge
+     * Értéke true, ha a számla tétel előleg jellegűThe value is true if the
+     * invoice item is a kind of advance charge
      *
      * @param boolean $advanceIndicator
      * @return self
@@ -403,7 +442,8 @@ class LineType
     /**
      * Gets as lineDescription
      *
-     * A termék vagy szolgáltatás megnevezéseName / description of the product or service
+     * A termék vagy szolgáltatás megnevezéseName / description of the product or
+     * service
      *
      * @return string
      */
@@ -415,7 +455,8 @@ class LineType
     /**
      * Sets a new lineDescription
      *
-     * A termék vagy szolgáltatás megnevezéseName / description of the product or service
+     * A termék vagy szolgáltatás megnevezéseName / description of the product or
+     * service
      *
      * @param string $lineDescription
      * @return self
@@ -481,7 +522,10 @@ class LineType
     /**
      * Gets as unitPrice
      *
-     * Egységár a számla pénznemében. Egyszerűsített számla esetén bruttó, egyéb esetben nettó egységárUnit price expressed in the currency of the invoice In the event of simplified invoices gross unit price, in other cases net unit price
+     * Egységár a számla pénznemében. Egyszerűsített számla esetén bruttó,
+     * egyéb esetben nettó egységárUnit price expressed in the currency of the
+     * invoice In the event of simplified invoices gross unit price, in other cases net
+     * unit price
      *
      * @return float
      */
@@ -493,7 +537,10 @@ class LineType
     /**
      * Sets a new unitPrice
      *
-     * Egységár a számla pénznemében. Egyszerűsített számla esetén bruttó, egyéb esetben nettó egységárUnit price expressed in the currency of the invoice In the event of simplified invoices gross unit price, in other cases net unit price
+     * Egységár a számla pénznemében. Egyszerűsített számla esetén bruttó,
+     * egyéb esetben nettó egységárUnit price expressed in the currency of the
+     * invoice In the event of simplified invoices gross unit price, in other cases net
+     * unit price
      *
      * @param float $unitPrice
      * @return self
@@ -533,7 +580,9 @@ class LineType
     /**
      * Gets as lineAmountsNormal
      *
-     * Normál (nem egyszerűsített) számla esetén (beleértve a gyűjtőszámlát) kitöltendő tétel érték adatok.Item value data to be completed in case of normal (not simplified, but including aggregated) invoice
+     * Normál (nem egyszerűsített) számla esetén (beleértve a gyűjtőszámlát)
+     * kitöltendő tétel érték adatok.Item value data to be completed in case of
+     * normal (not simplified, but including aggregated) invoice
      *
      * @return \Dream\NavInvoiceData\LineAmountsNormalType
      */
@@ -545,7 +594,9 @@ class LineType
     /**
      * Sets a new lineAmountsNormal
      *
-     * Normál (nem egyszerűsített) számla esetén (beleértve a gyűjtőszámlát) kitöltendő tétel érték adatok.Item value data to be completed in case of normal (not simplified, but including aggregated) invoice
+     * Normál (nem egyszerűsített) számla esetén (beleértve a gyűjtőszámlát)
+     * kitöltendő tétel érték adatok.Item value data to be completed in case of
+     * normal (not simplified, but including aggregated) invoice
      *
      * @param \Dream\NavInvoiceData\LineAmountsNormalType $lineAmountsNormal
      * @return self
@@ -559,7 +610,8 @@ class LineType
     /**
      * Gets as lineAmountsSimplified
      *
-     * Egyszerűsített számla esetén kitöltendő tétel érték adatokItem value data to be completed in case of simplified invoice
+     * Egyszerűsített számla esetén kitöltendő tétel érték adatokItem value
+     * data to be completed in case of simplified invoice
      *
      * @return \Dream\NavInvoiceData\LineAmountsSimplifiedType
      */
@@ -571,7 +623,8 @@ class LineType
     /**
      * Sets a new lineAmountsSimplified
      *
-     * Egyszerűsített számla esetén kitöltendő tétel érték adatokItem value data to be completed in case of simplified invoice
+     * Egyszerűsített számla esetén kitöltendő tétel érték adatokItem value
+     * data to be completed in case of simplified invoice
      *
      * @param \Dream\NavInvoiceData\LineAmountsSimplifiedType $lineAmountsSimplified
      * @return self
@@ -585,7 +638,9 @@ class LineType
     /**
      * Gets as intermediatedService
      *
-     * Értéke true ha a tétel közvetített szolgáltatás - Számviteli tv. 3.§ (4) 1The value is true if the item is an intermediated service - paragraph (4) 1 of the Article 3 of Accounting Act
+     * Értéke true ha a tétel közvetített szolgáltatás - Számviteli tv. 3.§
+     * (4) 1The value is true if the item is an intermediated service - paragraph (4) 1
+     * of the Article 3 of Accounting Act
      *
      * @return boolean
      */
@@ -597,7 +652,9 @@ class LineType
     /**
      * Sets a new intermediatedService
      *
-     * Értéke true ha a tétel közvetített szolgáltatás - Számviteli tv. 3.§ (4) 1The value is true if the item is an intermediated service - paragraph (4) 1 of the Article 3 of Accounting Act
+     * Értéke true ha a tétel közvetített szolgáltatás - Számviteli tv. 3.§
+     * (4) 1The value is true if the item is an intermediated service - paragraph (4) 1
+     * of the Article 3 of Accounting Act
      *
      * @param boolean $intermediatedService
      * @return self
@@ -625,7 +682,8 @@ class LineType
      *
      * Gyűjtő számla adatokAggregate invoice data
      *
-     * @param \Dream\NavInvoiceData\AggregateInvoiceLineDataType $aggregateInvoiceLineData
+     * @param \Dream\NavInvoiceData\AggregateInvoiceLineDataType
+     * $aggregateInvoiceLineData
      * @return self
      */
     public function setAggregateInvoiceLineData(\Dream\NavInvoiceData\AggregateInvoiceLineDataType $aggregateInvoiceLineData)
@@ -637,7 +695,8 @@ class LineType
     /**
      * Gets as newTransportMean
      *
-     * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of new means of transport - section 89 § and 169 (o) of the VAT law
+     * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of
+     * new means of transport - section 89 § and 169 (o) of the VAT law
      *
      * @return \Dream\NavInvoiceData\NewTransportMeanType
      */
@@ -649,7 +708,8 @@ class LineType
     /**
      * Sets a new newTransportMean
      *
-     * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of new means of transport - section 89 § and 169 (o) of the VAT law
+     * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of
+     * new means of transport - section 89 § and 169 (o) of the VAT law
      *
      * @param \Dream\NavInvoiceData\NewTransportMeanType $newTransportMean
      * @return self
@@ -663,7 +723,8 @@ class LineType
     /**
      * Gets as depositIndicator
      *
-     * Értéke true, ha a tétel betétdíj jellegűThe value is true if the item is bottle/container deposit
+     * Értéke true, ha a tétel betétdíj jellegűThe value is true if the item is
+     * bottle/container deposit
      *
      * @return boolean
      */
@@ -675,7 +736,8 @@ class LineType
     /**
      * Sets a new depositIndicator
      *
-     * Értéke true, ha a tétel betétdíj jellegűThe value is true if the item is bottle/container deposit
+     * Értéke true, ha a tétel betétdíj jellegűThe value is true if the item is
+     * bottle/container deposit
      *
      * @param boolean $depositIndicator
      * @return self
@@ -689,7 +751,8 @@ class LineType
     /**
      * Gets as marginSchemeIndicator
      *
-     * Különbözet szerinti szabályozás jelölése - ÁFA tv. 169. § p) q)Marking the margin-scheme taxation as per section 169 (p)(q)
+     * Különbözet szerinti szabályozás jelölése - ÁFA tv. 169. § p) q)Marking
+     * the margin-scheme taxation as per section 169 (p)(q)
      *
      * @return string
      */
@@ -701,7 +764,8 @@ class LineType
     /**
      * Sets a new marginSchemeIndicator
      *
-     * Különbözet szerinti szabályozás jelölése - ÁFA tv. 169. § p) q)Marking the margin-scheme taxation as per section 169 (p)(q)
+     * Különbözet szerinti szabályozás jelölése - ÁFA tv. 169. § p) q)Marking
+     * the margin-scheme taxation as per section 169 (p)(q)
      *
      * @param string $marginSchemeIndicator
      * @return self
@@ -781,7 +845,8 @@ class LineType
     /**
      * Gets as obligatedForProductFee
      *
-     * Értéke true ha a tételt termékdíj fizetési kötelezettség terheliThe value is true if the item is liable to product fee
+     * Értéke true ha a tételt termékdíj fizetési kötelezettség terheliThe
+     * value is true if the item is liable to product fee
      *
      * @return boolean
      */
@@ -793,7 +858,8 @@ class LineType
     /**
      * Sets a new obligatedForProductFee
      *
-     * Értéke true ha a tételt termékdíj fizetési kötelezettség terheliThe value is true if the item is liable to product fee
+     * Értéke true ha a tételt termékdíj fizetési kötelezettség terheliThe
+     * value is true if the item is liable to product fee
      *
      * @param boolean $obligatedForProductFee
      * @return self
@@ -807,7 +873,9 @@ class LineType
     /**
      * Gets as gPCExcise
      *
-     * Földgáz, villamos energia, szén jövedéki adója forintban - Jöt. 118. § (2)Excise duty on natural gas, electricity and coal in Hungarian forints – paragraph (2), Section 118 of the Act on Excise Duties
+     * Földgáz, villamos energia, szén jövedéki adója forintban - Jöt. 118. §
+     * (2)Excise duty on natural gas, electricity and coal in Hungarian forints –
+     * paragraph (2), Section 118 of the Act on Excise Duties
      *
      * @return float
      */
@@ -819,7 +887,9 @@ class LineType
     /**
      * Sets a new gPCExcise
      *
-     * Földgáz, villamos energia, szén jövedéki adója forintban - Jöt. 118. § (2)Excise duty on natural gas, electricity and coal in Hungarian forints – paragraph (2), Section 118 of the Act on Excise Duties
+     * Földgáz, villamos energia, szén jövedéki adója forintban - Jöt. 118. §
+     * (2)Excise duty on natural gas, electricity and coal in Hungarian forints –
+     * paragraph (2), Section 118 of the Act on Excise Duties
      *
      * @param float $gPCExcise
      * @return self
@@ -833,7 +903,9 @@ class LineType
     /**
      * Gets as dieselOilPurchase
      *
-     * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a), paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
+     * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM
+     * rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a),
+     * paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
      *
      * @return \Dream\NavInvoiceData\DieselOilPurchaseType
      */
@@ -845,7 +917,9 @@ class LineType
     /**
      * Sets a new dieselOilPurchase
      *
-     * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a), paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
+     * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM
+     * rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a),
+     * paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
      *
      * @param \Dream\NavInvoiceData\DieselOilPurchaseType $dieselOilPurchase
      * @return self
@@ -859,7 +933,10 @@ class LineType
     /**
      * Gets as netaDeclaration
      *
-     * Értéke true, ha a Neta tv-ben meghatározott adókötelezettség az adó alanyát terheli. 2011. évi CIII. tv. 3.§(2)Value is true, if the taxable person is liable for tax obligation determined in the Act on Public Health Product Tax (Neta tv.). Paragraph (2), Section 3 of the Act CIII of 2011
+     * Értéke true, ha a Neta tv-ben meghatározott adókötelezettség az adó
+     * alanyát terheli. 2011. évi CIII. tv. 3.§(2)Value is true, if the taxable
+     * person is liable for tax obligation determined in the Act on Public Health
+     * Product Tax (Neta tv.). Paragraph (2), Section 3 of the Act CIII of 2011
      *
      * @return boolean
      */
@@ -871,7 +948,10 @@ class LineType
     /**
      * Sets a new netaDeclaration
      *
-     * Értéke true, ha a Neta tv-ben meghatározott adókötelezettség az adó alanyát terheli. 2011. évi CIII. tv. 3.§(2)Value is true, if the taxable person is liable for tax obligation determined in the Act on Public Health Product Tax (Neta tv.). Paragraph (2), Section 3 of the Act CIII of 2011
+     * Értéke true, ha a Neta tv-ben meghatározott adókötelezettség az adó
+     * alanyát terheli. 2011. évi CIII. tv. 3.§(2)Value is true, if the taxable
+     * person is liable for tax obligation determined in the Act on Public Health
+     * Product Tax (Neta tv.). Paragraph (2), Section 3 of the Act CIII of 2011
      *
      * @param boolean $netaDeclaration
      * @return self
@@ -885,7 +965,9 @@ class LineType
     /**
      * Gets as productFeeClause
      *
-     * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti, tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on Environmental Protection Product Fee (related to the item)
+     * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti,
+     * tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on
+     * Environmental Protection Product Fee (related to the item)
      *
      * @return \Dream\NavInvoiceData\ProductFeeClauseType
      */
@@ -897,7 +979,9 @@ class LineType
     /**
      * Sets a new productFeeClause
      *
-     * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti, tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on Environmental Protection Product Fee (related to the item)
+     * A környezetvédelmi termékdíjról szóló 2011. évi LXXXV. tv. szerinti,
+     * tételre vonatkozó záradékokClauses according to the Act LXXXV of 2011 on
+     * Environmental Protection Product Fee (related to the item)
      *
      * @param \Dream\NavInvoiceData\ProductFeeClauseType $productFeeClause
      * @return self
@@ -911,7 +995,8 @@ class LineType
     /**
      * Adds as lineProductFeeContent
      *
-     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the line's product charge
+     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the
+     * line's product charge
      *
      * @return self
      * @param \Dream\NavInvoiceData\ProductFeeDataType $lineProductFeeContent
@@ -925,7 +1010,8 @@ class LineType
     /**
      * isset lineProductFeeContent
      *
-     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the line's product charge
+     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the
+     * line's product charge
      *
      * @param scalar $index
      * @return boolean
@@ -938,7 +1024,8 @@ class LineType
     /**
      * unset lineProductFeeContent
      *
-     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the line's product charge
+     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the
+     * line's product charge
      *
      * @param scalar $index
      * @return void
@@ -951,7 +1038,8 @@ class LineType
     /**
      * Gets as lineProductFeeContent
      *
-     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the line's product charge
+     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the
+     * line's product charge
      *
      * @return \Dream\NavInvoiceData\ProductFeeDataType[]
      */
@@ -963,7 +1051,8 @@ class LineType
     /**
      * Sets a new lineProductFeeContent
      *
-     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the line's product charge
+     * A tétel termékdíj tartalmára vonatkozó adatokData on the content of the
+     * line's product charge
      *
      * @param \Dream\NavInvoiceData\ProductFeeDataType[] $lineProductFeeContent
      * @return self
@@ -977,7 +1066,8 @@ class LineType
     /**
      * Adds as additionalLineData
      *
-     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in relation to the product / service item
+     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in
+     * relation to the product / service item
      *
      * @return self
      * @param \Dream\NavInvoiceData\AdditionalDataType $additionalLineData
@@ -991,7 +1081,8 @@ class LineType
     /**
      * isset additionalLineData
      *
-     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in relation to the product / service item
+     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in
+     * relation to the product / service item
      *
      * @param scalar $index
      * @return boolean
@@ -1004,7 +1095,8 @@ class LineType
     /**
      * unset additionalLineData
      *
-     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in relation to the product / service item
+     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in
+     * relation to the product / service item
      *
      * @param scalar $index
      * @return void
@@ -1017,7 +1109,8 @@ class LineType
     /**
      * Gets as additionalLineData
      *
-     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in relation to the product / service item
+     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in
+     * relation to the product / service item
      *
      * @return \Dream\NavInvoiceData\AdditionalDataType[]
      */
@@ -1029,7 +1122,8 @@ class LineType
     /**
      * Sets a new additionalLineData
      *
-     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in relation to the product / service item
+     * A termék/szolgáltatás tételhez kapcsolódó, további adatOther data in
+     * relation to the product / service item
      *
      * @param \Dream\NavInvoiceData\AdditionalDataType[] $additionalLineData
      * @return self

@@ -8,10 +8,23 @@
     }
   ],
   "require": {
-    "goetas-webservices/xsd2php-runtime":"^0.2.2"
+    "goetas/xsd2php":"dev-master",
+    "goetas/xsd-reader":"2.*@dev",
+    "jms/serializer": "xsd2php-dev as 0.18.0"
   },
-  "require-dev": {
-    "goetas-webservices/xsd2php":"^0.3"
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/goetas/serializer.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/AronSzigetvari/xsd2php.git"
+    }
+  ],
+  "scripts": {
+    "build-classes": "xsd2php convert:php invoiceData.xsd --ns-map \"http://schemas.nav.gov.hu/OSA/1.0/data;Dream/NavInvoiceData/\" --ns-dest \"Dream/NavInvoiceData/;src\" --naming-strategy short",
+    "build-meta": "xsd2php convert:jms-yaml invoiceData.xsd --ns-map \"http://schemas.nav.gov.hu/OSA/1.0/data;Dream/NavInvoiceData/\" --ns-dest \"Dream/NavInvoiceData/;metadata\" --naming-strategy short"
   },
   "autoload": {
     "psr-4": {

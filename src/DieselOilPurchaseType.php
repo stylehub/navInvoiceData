@@ -5,7 +5,9 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing DieselOilPurchaseType
  *
- * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a), paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
+ * Gázolaj adózottan történő beszerzésének adatai – 45/2016 (XI. 29.) NGM
+ * rendelet 75. § (1) a)Data of gas oil acquisition after taxation – point a),
+ * paragraph (1) of Section 75 of the NGM Decree No. 45/2016. (XI. 29.)
  * XSD Type: DieselOilPurchaseType
  */
 class DieselOilPurchaseType
@@ -26,14 +28,18 @@ class DieselOilPurchaseType
     private $purchaseDate = null;
 
     /**
-     * Kereskedelmi jármű forgalmi rendszáma (csak betűk és számokRegistration number of vehicle (letters and numbers only)
+     * Kereskedelmi jármű forgalmi rendszáma (csak betűk és számokRegistration
+     * number of vehicle (letters and numbers only)
      *
      * @property string $vehicleRegistrationNumber
      */
     private $vehicleRegistrationNumber = null;
 
     /**
-     * Gépi bérmunka-szolgáltatás során felhasznált gázolaj mennyisége literben – Jöt. 117. § (2)Fordítandó helyett: Quantity of diesel oil used for contract work and machinery hire service in liter – Act LXVIII of 2016 on Excise Tax section 117 (2)
+     * Gépi bérmunka-szolgáltatás során felhasznált gázolaj mennyisége literben
+     * – Jöt. 117. § (2)Fordítandó helyett: Quantity of diesel oil used for
+     * contract work and machinery hire service in liter – Act LXVIII of 2016 on
+     * Excise Tax section 117 (2)
      *
      * @property float $dieselOilQuantity
      */
@@ -94,7 +100,8 @@ class DieselOilPurchaseType
     /**
      * Gets as vehicleRegistrationNumber
      *
-     * Kereskedelmi jármű forgalmi rendszáma (csak betűk és számokRegistration number of vehicle (letters and numbers only)
+     * Kereskedelmi jármű forgalmi rendszáma (csak betűk és számokRegistration
+     * number of vehicle (letters and numbers only)
      *
      * @return string
      */
@@ -106,7 +113,8 @@ class DieselOilPurchaseType
     /**
      * Sets a new vehicleRegistrationNumber
      *
-     * Kereskedelmi jármű forgalmi rendszáma (csak betűk és számokRegistration number of vehicle (letters and numbers only)
+     * Kereskedelmi jármű forgalmi rendszáma (csak betűk és számokRegistration
+     * number of vehicle (letters and numbers only)
      *
      * @param string $vehicleRegistrationNumber
      * @return self
@@ -120,7 +128,10 @@ class DieselOilPurchaseType
     /**
      * Gets as dieselOilQuantity
      *
-     * Gépi bérmunka-szolgáltatás során felhasznált gázolaj mennyisége literben – Jöt. 117. § (2)Fordítandó helyett: Quantity of diesel oil used for contract work and machinery hire service in liter – Act LXVIII of 2016 on Excise Tax section 117 (2)
+     * Gépi bérmunka-szolgáltatás során felhasznált gázolaj mennyisége literben
+     * – Jöt. 117. § (2)Fordítandó helyett: Quantity of diesel oil used for
+     * contract work and machinery hire service in liter – Act LXVIII of 2016 on
+     * Excise Tax section 117 (2)
      *
      * @return float
      */
@@ -132,7 +143,10 @@ class DieselOilPurchaseType
     /**
      * Sets a new dieselOilQuantity
      *
-     * Gépi bérmunka-szolgáltatás során felhasznált gázolaj mennyisége literben – Jöt. 117. § (2)Fordítandó helyett: Quantity of diesel oil used for contract work and machinery hire service in liter – Act LXVIII of 2016 on Excise Tax section 117 (2)
+     * Gépi bérmunka-szolgáltatás során felhasznált gázolaj mennyisége literben
+     * – Jöt. 117. § (2)Fordítandó helyett: Quantity of diesel oil used for
+     * contract work and machinery hire service in liter – Act LXVIII of 2016 on
+     * Excise Tax section 117 (2)
      *
      * @param float $dieselOilQuantity
      * @return self

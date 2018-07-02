@@ -12,7 +12,8 @@ class InvoiceHeadType
 {
 
     /**
-     * Számla kibocsátó (eladó) adataiData related to the issuer of the invoice (supplier)
+     * Számla kibocsátó (eladó) adataiData related to the issuer of the invoice
+     * (supplier)
      *
      * @property \Dream\NavInvoiceData\SupplierInfoType $supplierInfo
      */
@@ -28,7 +29,8 @@ class InvoiceHeadType
     /**
      * Pénzügyi képviselő adataiData related to the fiscal representative
      *
-     * @property \Dream\NavInvoiceData\FiscalRepresentativeType $fiscalRepresentativeInfo
+     * @property \Dream\NavInvoiceData\FiscalRepresentativeType
+     * $fiscalRepresentativeInfo
      */
     private $fiscalRepresentativeInfo = null;
 
@@ -42,7 +44,8 @@ class InvoiceHeadType
     /**
      * Gets as supplierInfo
      *
-     * Számla kibocsátó (eladó) adataiData related to the issuer of the invoice (supplier)
+     * Számla kibocsátó (eladó) adataiData related to the issuer of the invoice
+     * (supplier)
      *
      * @return \Dream\NavInvoiceData\SupplierInfoType
      */
@@ -54,7 +57,8 @@ class InvoiceHeadType
     /**
      * Sets a new supplierInfo
      *
-     * Számla kibocsátó (eladó) adataiData related to the issuer of the invoice (supplier)
+     * Számla kibocsátó (eladó) adataiData related to the issuer of the invoice
+     * (supplier)
      *
      * @param \Dream\NavInvoiceData\SupplierInfoType $supplierInfo
      * @return self

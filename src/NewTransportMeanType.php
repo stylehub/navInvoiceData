@@ -5,7 +5,8 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing NewTransportMeanType
  *
- * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of new means of transport - section 89 § and 169 (o) of the VAT law
+ * Új közlekedési eszköz értékesítés ÁFA tv. 89 § ill. 169 § o)Supply of
+ * new means of transport - section 89 § and 169 (o) of the VAT law
  * XSD Type: NewTransportMeanType
  */
 class NewTransportMeanType
@@ -19,7 +20,8 @@ class NewTransportMeanType
     private $brand = null;
 
     /**
-     * Alvázszám/gyári szám/Gyártási számChassis number / serial number / product number
+     * Alvázszám/gyári szám/Gyártási számChassis number / serial number /
+     * product number
      *
      * @property string $serialNum
      */
@@ -40,7 +42,8 @@ class NewTransportMeanType
     private $firstEntryIntoService = null;
 
     /**
-     * Szárazföldi közlekedési eszköz további adataiOther data in relation to motorised land vehicle
+     * Szárazföldi közlekedési eszköz további adataiOther data in relation to
+     * motorised land vehicle
      *
      * @property \Dream\NavInvoiceData\VehicleType $vehicle
      */
@@ -89,7 +92,8 @@ class NewTransportMeanType
     /**
      * Gets as serialNum
      *
-     * Alvázszám/gyári szám/Gyártási számChassis number / serial number / product number
+     * Alvázszám/gyári szám/Gyártási számChassis number / serial number /
+     * product number
      *
      * @return string
      */
@@ -101,7 +105,8 @@ class NewTransportMeanType
     /**
      * Sets a new serialNum
      *
-     * Alvázszám/gyári szám/Gyártási számChassis number / serial number / product number
+     * Alvázszám/gyári szám/Gyártási számChassis number / serial number /
+     * product number
      *
      * @param string $serialNum
      * @return self
@@ -167,7 +172,8 @@ class NewTransportMeanType
     /**
      * Gets as vehicle
      *
-     * Szárazföldi közlekedési eszköz további adataiOther data in relation to motorised land vehicle
+     * Szárazföldi közlekedési eszköz további adataiOther data in relation to
+     * motorised land vehicle
      *
      * @return \Dream\NavInvoiceData\VehicleType
      */
@@ -179,7 +185,8 @@ class NewTransportMeanType
     /**
      * Sets a new vehicle
      *
-     * Szárazföldi közlekedési eszköz további adataiOther data in relation to motorised land vehicle
+     * Szárazföldi közlekedési eszköz további adataiOther data in relation to
+     * motorised land vehicle
      *
      * @param \Dream\NavInvoiceData\VehicleType $vehicle
      * @return self

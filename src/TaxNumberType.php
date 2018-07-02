@@ -12,14 +12,17 @@ class TaxNumberType
 {
 
     /**
-     * Az adóalany adó törzsszáma. Csoportos adóalany esetén csoportazonosító számCore tax number of the taxable person. In case of group taxation arrangement the group identification number
+     * Az adóalany adó törzsszáma. Csoportos adóalany esetén csoportazonosító
+     * számCore tax number of the taxable person. In case of group taxation
+     * arrangement the group identification number
      *
      * @property string $taxpayerId
      */
     private $taxpayerId = null;
 
     /**
-     * ÁFA kód az adóalanyiság típusanak jelzésére. Egy számjegyVAT code to indicate taxation type of the taxpayer. One digit
+     * ÁFA kód az adóalanyiság típusanak jelzésére. Egy számjegyVAT code to
+     * indicate taxation type of the taxpayer. One digit
      *
      * @property string $vatCode
      */
@@ -35,7 +38,9 @@ class TaxNumberType
     /**
      * Gets as taxpayerId
      *
-     * Az adóalany adó törzsszáma. Csoportos adóalany esetén csoportazonosító számCore tax number of the taxable person. In case of group taxation arrangement the group identification number
+     * Az adóalany adó törzsszáma. Csoportos adóalany esetén csoportazonosító
+     * számCore tax number of the taxable person. In case of group taxation
+     * arrangement the group identification number
      *
      * @return string
      */
@@ -47,7 +52,9 @@ class TaxNumberType
     /**
      * Sets a new taxpayerId
      *
-     * Az adóalany adó törzsszáma. Csoportos adóalany esetén csoportazonosító számCore tax number of the taxable person. In case of group taxation arrangement the group identification number
+     * Az adóalany adó törzsszáma. Csoportos adóalany esetén csoportazonosító
+     * számCore tax number of the taxable person. In case of group taxation
+     * arrangement the group identification number
      *
      * @param string $taxpayerId
      * @return self
@@ -61,7 +68,8 @@ class TaxNumberType
     /**
      * Gets as vatCode
      *
-     * ÁFA kód az adóalanyiság típusanak jelzésére. Egy számjegyVAT code to indicate taxation type of the taxpayer. One digit
+     * ÁFA kód az adóalanyiság típusanak jelzésére. Egy számjegyVAT code to
+     * indicate taxation type of the taxpayer. One digit
      *
      * @return string
      */
@@ -73,7 +81,8 @@ class TaxNumberType
     /**
      * Sets a new vatCode
      *
-     * ÁFA kód az adóalanyiság típusanak jelzésére. Egy számjegyVAT code to indicate taxation type of the taxpayer. One digit
+     * ÁFA kód az adóalanyiság típusanak jelzésére. Egy számjegyVAT code to
+     * indicate taxation type of the taxpayer. One digit
      *
      * @param string $vatCode
      * @return self

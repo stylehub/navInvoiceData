@@ -19,7 +19,7 @@ Dream\NavInvoiceData\InvoiceAnnulmentType:
             accessor:
                 getter: getAnnulmentTimestamp
                 setter: setAnnulmentTimestamp
-            type: DateTime<'Y-m-d\TH:i:s.000\Z', 'UTC'>
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
         annulmentCode:
             expose: true
             access_type: public_method

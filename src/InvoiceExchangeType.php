@@ -26,7 +26,8 @@ class InvoiceExchangeType
     private $invoiceHead = null;
 
     /**
-     * A számlán szereplő tételek adataiProduct/service data appearing on the invoice
+     * A számlán szereplő tételek adataiProduct/service data appearing on the
+     * invoice
      *
      * @property \Dream\NavInvoiceData\LineType[] $invoiceLines
      */
@@ -37,9 +38,7 @@ class InvoiceExchangeType
      *
      * @property \Dream\NavInvoiceData\ProductFeeSummaryType[] $productFeeSummary
      */
-    private $productFeeSummary = array(
-        
-    );
+    private $productFeeSummary = null;
 
     /**
      * Az ÁFA törvény szerinti összesítő adatokSummary data according to VAT law
@@ -103,7 +102,8 @@ class InvoiceExchangeType
     /**
      * Adds as line
      *
-     * A számlán szereplő tételek adataiProduct/service data appearing on the invoice
+     * A számlán szereplő tételek adataiProduct/service data appearing on the
+     * invoice
      *
      * @return self
      * @param \Dream\NavInvoiceData\LineType $line
@@ -117,7 +117,8 @@ class InvoiceExchangeType
     /**
      * isset invoiceLines
      *
-     * A számlán szereplő tételek adataiProduct/service data appearing on the invoice
+     * A számlán szereplő tételek adataiProduct/service data appearing on the
+     * invoice
      *
      * @param scalar $index
      * @return boolean
@@ -130,7 +131,8 @@ class InvoiceExchangeType
     /**
      * unset invoiceLines
      *
-     * A számlán szereplő tételek adataiProduct/service data appearing on the invoice
+     * A számlán szereplő tételek adataiProduct/service data appearing on the
+     * invoice
      *
      * @param scalar $index
      * @return void
@@ -143,7 +145,8 @@ class InvoiceExchangeType
     /**
      * Gets as invoiceLines
      *
-     * A számlán szereplő tételek adataiProduct/service data appearing on the invoice
+     * A számlán szereplő tételek adataiProduct/service data appearing on the
+     * invoice
      *
      * @return \Dream\NavInvoiceData\LineType[]
      */
@@ -155,7 +158,8 @@ class InvoiceExchangeType
     /**
      * Sets a new invoiceLines
      *
-     * A számlán szereplő tételek adataiProduct/service data appearing on the invoice
+     * A számlán szereplő tételek adataiProduct/service data appearing on the
+     * invoice
      *
      * @param \Dream\NavInvoiceData\LineType[] $invoiceLines
      * @return self

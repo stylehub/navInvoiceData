@@ -12,7 +12,8 @@ class SummaryType
 {
 
     /**
-     * Számla összesítés (nem egyszerűsített számla esetén)Calculation of invoice totals (not simplified invoice)
+     * Számla összesítés (nem egyszerűsített számla esetén)Calculation of
+     * invoice totals (not simplified invoice)
      *
      * @property \Dream\NavInvoiceData\SummaryNormalType $summaryNormal
      */
@@ -23,12 +24,11 @@ class SummaryType
      *
      * @property \Dream\NavInvoiceData\SummarySimplifiedType[] $summarySimplified
      */
-    private $summarySimplified = array(
-        
-    );
+    private $summarySimplified = null;
 
     /**
-     * A számla bruttó összege a számla pénznemébenGross amount of the invoice expressed in the currency of the invoice
+     * A számla bruttó összege a számla pénznemébenGross amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @property float $invoiceGrossAmount
      */
@@ -37,7 +37,8 @@ class SummaryType
     /**
      * Gets as summaryNormal
      *
-     * Számla összesítés (nem egyszerűsített számla esetén)Calculation of invoice totals (not simplified invoice)
+     * Számla összesítés (nem egyszerűsített számla esetén)Calculation of
+     * invoice totals (not simplified invoice)
      *
      * @return \Dream\NavInvoiceData\SummaryNormalType
      */
@@ -49,7 +50,8 @@ class SummaryType
     /**
      * Sets a new summaryNormal
      *
-     * Számla összesítés (nem egyszerűsített számla esetén)Calculation of invoice totals (not simplified invoice)
+     * Számla összesítés (nem egyszerűsített számla esetén)Calculation of
+     * invoice totals (not simplified invoice)
      *
      * @param \Dream\NavInvoiceData\SummaryNormalType $summaryNormal
      * @return self
@@ -129,7 +131,8 @@ class SummaryType
     /**
      * Gets as invoiceGrossAmount
      *
-     * A számla bruttó összege a számla pénznemébenGross amount of the invoice expressed in the currency of the invoice
+     * A számla bruttó összege a számla pénznemébenGross amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @return float
      */
@@ -141,7 +144,8 @@ class SummaryType
     /**
      * Sets a new invoiceGrossAmount
      *
-     * A számla bruttó összege a számla pénznemébenGross amount of the invoice expressed in the currency of the invoice
+     * A számla bruttó összege a számla pénznemébenGross amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @param float $invoiceGrossAmount
      * @return self

@@ -5,7 +5,8 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing VehicleType
  *
- * Szárazföldi közlekedési eszköz további adataiOther data in relation to motorised land vehicle
+ * Szárazföldi közlekedési eszköz további adataiOther data in relation to
+ * motorised land vehicle
  * XSD Type: VehicleType
  */
 class VehicleType

@@ -5,7 +5,8 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing SummaryNormalType
  *
- * Számla összesítés (nem egyszerűsített számla esetén)Calculation of invoice totals (not simplified invoice)
+ * Számla összesítés (nem egyszerűsített számla esetén)Calculation of
+ * invoice totals (not simplified invoice)
  * XSD Type: SummaryNormalType
  */
 class SummaryNormalType
@@ -16,19 +17,19 @@ class SummaryNormalType
      *
      * @property \Dream\NavInvoiceData\SummaryByVatRateType[] $summaryByVatRate
      */
-    private $summaryByVatRate = array(
-        
-    );
+    private $summaryByVatRate = null;
 
     /**
-     * A számla nettó összege a számla pénznemébenNet amount of the invoice expressed in the currency of the invoice
+     * A számla nettó összege a számla pénznemébenNet amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @property float $invoiceNetAmount
      */
     private $invoiceNetAmount = null;
 
     /**
-     * A számla ÁFA összege a számla pénznemébenVAT amount of the invoice expressed in the currency of the invoice
+     * A számla ÁFA összege a számla pénznemébenVAT amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @property float $invoiceVatAmount
      */
@@ -110,7 +111,8 @@ class SummaryNormalType
     /**
      * Gets as invoiceNetAmount
      *
-     * A számla nettó összege a számla pénznemébenNet amount of the invoice expressed in the currency of the invoice
+     * A számla nettó összege a számla pénznemébenNet amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @return float
      */
@@ -122,7 +124,8 @@ class SummaryNormalType
     /**
      * Sets a new invoiceNetAmount
      *
-     * A számla nettó összege a számla pénznemébenNet amount of the invoice expressed in the currency of the invoice
+     * A számla nettó összege a számla pénznemébenNet amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @param float $invoiceNetAmount
      * @return self
@@ -136,7 +139,8 @@ class SummaryNormalType
     /**
      * Gets as invoiceVatAmount
      *
-     * A számla ÁFA összege a számla pénznemébenVAT amount of the invoice expressed in the currency of the invoice
+     * A számla ÁFA összege a számla pénznemébenVAT amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @return float
      */
@@ -148,7 +152,8 @@ class SummaryNormalType
     /**
      * Sets a new invoiceVatAmount
      *
-     * A számla ÁFA összege a számla pénznemébenVAT amount of the invoice expressed in the currency of the invoice
+     * A számla ÁFA összege a számla pénznemébenVAT amount of the invoice
+     * expressed in the currency of the invoice
      *
      * @param float $invoiceVatAmount
      * @return self

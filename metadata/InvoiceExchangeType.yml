@@ -32,8 +32,8 @@ Dream\NavInvoiceData\InvoiceExchangeType:
             type: array<Dream\NavInvoiceData\LineType>
             xml_list:
                 inline: false
-                entry_name: line
                 skip_when_empty: true
+                entry_name: line
                 namespace: 'http://schemas.nav.gov.hu/OSA/1.0/data'
         productFeeSummary:
             expose: true

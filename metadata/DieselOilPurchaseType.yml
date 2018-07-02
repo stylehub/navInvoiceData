@@ -19,7 +19,7 @@ Dream\NavInvoiceData\DieselOilPurchaseType:
             accessor:
                 getter: getPurchaseDate
                 setter: setPurchaseDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+            type: 'DateTime<''Y-m-d''>'
         vehicleRegistrationNumber:
             expose: true
             access_type: public_method

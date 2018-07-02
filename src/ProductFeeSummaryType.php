@@ -12,7 +12,9 @@ class ProductFeeSummaryType
 {
 
     /**
-     * Annak jelzése, hogy a termékdíj összesítés visszaigénylésre (REFUND) vagy raktárba történő beszállításra (DEPOSIT) vonatkozikIndicating whether the the product fee summary concerns refund or deposit
+     * Annak jelzése, hogy a termékdíj összesítés visszaigénylésre (REFUND)
+     * vagy raktárba történő beszállításra (DEPOSIT) vonatkozikIndicating
+     * whether the the product fee summary concerns refund or deposit
      *
      * @property string $productFeeOperation
      */
@@ -23,9 +25,7 @@ class ProductFeeSummaryType
      *
      * @property \Dream\NavInvoiceData\ProductFeeDataType[] $productFeeData
      */
-    private $productFeeData = array(
-        
-    );
+    private $productFeeData = null;
 
     /**
      * Termékdíj összesenAggergate product charges
@@ -35,16 +35,22 @@ class ProductFeeSummaryType
     private $productChargeSum = null;
 
     /**
-     * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv. 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the declaration submitted on the product fee according to the Paragraph (3), Section 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
+     * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv.
+     * 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the
+     * declaration submitted on the product fee according to the Paragraph (3), Section
+     * 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
      *
-     * @property \Dream\NavInvoiceData\PaymentEvidenceDocumentDataType $paymentEvidenceDocumentData
+     * @property \Dream\NavInvoiceData\PaymentEvidenceDocumentDataType
+     * $paymentEvidenceDocumentData
      */
     private $paymentEvidenceDocumentData = null;
 
     /**
      * Gets as productFeeOperation
      *
-     * Annak jelzése, hogy a termékdíj összesítés visszaigénylésre (REFUND) vagy raktárba történő beszállításra (DEPOSIT) vonatkozikIndicating whether the the product fee summary concerns refund or deposit
+     * Annak jelzése, hogy a termékdíj összesítés visszaigénylésre (REFUND)
+     * vagy raktárba történő beszállításra (DEPOSIT) vonatkozikIndicating
+     * whether the the product fee summary concerns refund or deposit
      *
      * @return string
      */
@@ -56,7 +62,9 @@ class ProductFeeSummaryType
     /**
      * Sets a new productFeeOperation
      *
-     * Annak jelzése, hogy a termékdíj összesítés visszaigénylésre (REFUND) vagy raktárba történő beszállításra (DEPOSIT) vonatkozikIndicating whether the the product fee summary concerns refund or deposit
+     * Annak jelzése, hogy a termékdíj összesítés visszaigénylésre (REFUND)
+     * vagy raktárba történő beszállításra (DEPOSIT) vonatkozikIndicating
+     * whether the the product fee summary concerns refund or deposit
      *
      * @param string $productFeeOperation
      * @return self
@@ -162,7 +170,10 @@ class ProductFeeSummaryType
     /**
      * Gets as paymentEvidenceDocumentData
      *
-     * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv. 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the declaration submitted on the product fee according to the Paragraph (3), Section 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
+     * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv.
+     * 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the
+     * declaration submitted on the product fee according to the Paragraph (3), Section
+     * 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
      *
      * @return \Dream\NavInvoiceData\PaymentEvidenceDocumentDataType
      */
@@ -174,9 +185,13 @@ class ProductFeeSummaryType
     /**
      * Sets a new paymentEvidenceDocumentData
      *
-     * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv. 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the declaration submitted on the product fee according to the Paragraph (3), Section 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
+     * A termékdíj bevallását igazoló dokumentum adatai a 2011. évi LXXXV. tv.
+     * 13. § (3) szerint és a 25. § (3) szerintData of the document verifying the
+     * declaration submitted on the product fee according to the Paragraph (3), Section
+     * 13 and the Paragraph (3) Section 25 of the Act LXXXV of 2011
      *
-     * @param \Dream\NavInvoiceData\PaymentEvidenceDocumentDataType $paymentEvidenceDocumentData
+     * @param \Dream\NavInvoiceData\PaymentEvidenceDocumentDataType
+     * $paymentEvidenceDocumentData
      * @return self
      */
     public function setPaymentEvidenceDocumentData(\Dream\NavInvoiceData\PaymentEvidenceDocumentDataType $paymentEvidenceDocumentData)

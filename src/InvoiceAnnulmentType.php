@@ -5,21 +5,24 @@ namespace Dream\NavInvoiceData;
 /**
  * Class representing InvoiceAnnulmentType
  *
- * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of technical annulment concerning previous data exchange
+ * Korábbi adatszolgáltatás technikai érvénytelenítésének adataiData of
+ * technical annulment concerning previous data exchange
  * XSD Type: InvoiceAnnulmentType
  */
 class InvoiceAnnulmentType
 {
 
     /**
-     * A technikai érvénytelenítéssel érintett számla vagy módosító okirat sorszámaSequential number of the invoice or modification document to be annuled
+     * A technikai érvénytelenítéssel érintett számla vagy módosító okirat
+     * sorszámaSequential number of the invoice or modification document to be annuled
      *
      * @property string $annulmentReference
      */
     private $annulmentReference = null;
 
     /**
-     * A technikai érvénytelenítés időbélyege a forrásrendszerben UTC idő szerintTimestamp of the technical annulment in UTC time
+     * A technikai érvénytelenítés időbélyege a forrásrendszerben UTC idő
+     * szerintTimestamp of the technical annulment in UTC time
      *
      * @property \DateTime $annulmentTimestamp
      */
@@ -42,7 +45,8 @@ class InvoiceAnnulmentType
     /**
      * Gets as annulmentReference
      *
-     * A technikai érvénytelenítéssel érintett számla vagy módosító okirat sorszámaSequential number of the invoice or modification document to be annuled
+     * A technikai érvénytelenítéssel érintett számla vagy módosító okirat
+     * sorszámaSequential number of the invoice or modification document to be annuled
      *
      * @return string
      */
@@ -54,7 +58,8 @@ class InvoiceAnnulmentType
     /**
      * Sets a new annulmentReference
      *
-     * A technikai érvénytelenítéssel érintett számla vagy módosító okirat sorszámaSequential number of the invoice or modification document to be annuled
+     * A technikai érvénytelenítéssel érintett számla vagy módosító okirat
+     * sorszámaSequential number of the invoice or modification document to be annuled
      *
      * @param string $annulmentReference
      * @return self
@@ -68,7 +73,8 @@ class InvoiceAnnulmentType
     /**
      * Gets as annulmentTimestamp
      *
-     * A technikai érvénytelenítés időbélyege a forrásrendszerben UTC idő szerintTimestamp of the technical annulment in UTC time
+     * A technikai érvénytelenítés időbélyege a forrásrendszerben UTC idő
+     * szerintTimestamp of the technical annulment in UTC time
      *
      * @return \DateTime
      */
@@ -80,7 +86,8 @@ class InvoiceAnnulmentType
     /**
      * Sets a new annulmentTimestamp
      *
-     * A technikai érvénytelenítés időbélyege a forrásrendszerben UTC idő szerintTimestamp of the technical annulment in UTC time
+     * A technikai érvénytelenítés időbélyege a forrásrendszerben UTC idő
+     * szerintTimestamp of the technical annulment in UTC time
      *
      * @param \DateTime $annulmentTimestamp
      * @return self
